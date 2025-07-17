@@ -1,26 +1,416 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f1e8;
+  --foreground: #3a2f2a;
+  --accent: #8b4513;
+  --secondary: #f9f5f0;
+  --border: #d4a574;
+  --muted: #8d6e63;
+  --autumn-primary: #d2691e;
+  --autumn-secondary: #cd853f;
+  --autumn-accent: #daa520;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-playfair);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Dark mode disabled to maintain autumn cream theme */
+
+body {
+  background: var(--background) !important;
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Force cream background even if dark mode is detected */
+html, body {
+  background-color: #f5f1e8 !important;
+  z-index: 0; /* Base layer */
+}
+
+/* Ensure parallax container is visible */
+.parallax-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: transparent; /* Transparente para ver las hojas */
+}
+
+/* Autumn parallax styles */
+.autumn-parallax {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.autumn-parallax > div {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+/* Falling leaf styles */
+.falling-leaf {
+  position: fixed;
+  pointer-events: none;
+  z-index: 3 !important;
+  opacity: 0.7;
+  animation: leafFall 8s linear infinite;
+}
+
+/* Scroll leaf styles */
+.scroll-leaf {
+  position: absolute;
+  pointer-events: none;
+  z-index: 3 !important;
+  opacity: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Autumn gradient */
+.autumn-gradient {
+  background: linear-gradient(135deg, 
+    #ff6b35 0%, 
+    #f7931e 25%, 
+    #ff4500 50%, 
+    #dc143c 75%, 
+    #8b4513 100%
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Leaf animations */
+@keyframes leafFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+@keyframes leafFall {
+  0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.7; }
+  90% { opacity: 0.7; }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+/* Ensure content is above parallax */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Parallax container */
+.parallax-container {
+  position: relative;
+  z-index: 4 !important;
+}
+
+/* Parallax layers */
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Autumn section styles */
+.autumn-section {
+  position: relative;
+  z-index: 10 !important;
+  background: rgba(245, 241, 232, 0.8); /* Más transparente para ver las hojas */
+}
+
+/* Ensure all content sections are above parallax elements */
+section {
+  position: relative;
+  z-index: 4 !important;
+}
+
+/* Sections with background (exclude hero) */
+section:not(#inicio) {
+  background: rgba(245, 241, 232, 0.75); /* Más transparente para ver las hojas */
+}
+
+/* Navigation has higher priority */
+nav {
+  z-index: 50 !important;
+}
+
+/* Footer should also be above parallax */
+footer {
+  position: relative;
+  z-index: 4 !important;
+}
+
+/* Estilos elegantes para tarjetas de investigadores */
+.researcher-card {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.researcher-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 40px 0 rgba(31, 38, 135, 0.4);
+}
+
+.researcher-image {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.researcher-image:hover {
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* Efectos de glassmorphism mejorados */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 40px 0 rgba(31, 38, 135, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Animaciones suaves */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.autumn-text {
+  color: var(--foreground);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+.autumn-accent {
+  color: var(--autumn-primary);
+}
+
+.autumn-secondary {
+  color: var(--autumn-secondary);
+}
+
+/* Leaf particle styles */
+.leaf-particle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .autumn-parallax .leaf-1,
+  .autumn-parallax .leaf-2,
+  .autumn-parallax .leaf-3,
+  .autumn-parallax .leaf-4,
+  .autumn-parallax .leaf-5 {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  
+  .autumn-parallax .tree-1,
+  .autumn-parallax .tree-2 {
+    width: 120px !important;
+    height: 180px !important;
+  }
+  
+  .autumn-parallax .leaf-group {
+    width: 60px !important;
+    height: 45px !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Force visibility for debugging */
+.leaf-1, .leaf-2, .leaf-3, .leaf-4, .leaf-5 {
+  opacity: 0.9 !important; /* Más visible */
+  z-index: 3 !important;
+}
+
+.tree-1, .tree-2 {
+  opacity: 0.5 !important; /* Más visible */
+  z-index: 2 !important;
+}
+
+.leaf-group {
+  opacity: 0.7 !important; /* Más visible */
+  z-index: 2 !important;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* Additional test styles */
+.test-visible {
+  background-color: #ff0000 !important;
+  border: 5px solid #fff !important;
+  z-index: 1 !important;
+  opacity: 1 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation keyframes */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+.animate-slide-in {
+  animation: slide-in 0.8s ease-out;
+}
+
+/* Custom focus styles */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+/* Estilos para animaciones de texto GSAP */
+.char-animate {
+  display: inline-block;
+}
+
+.word-animate {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.line-animate {
+  display: block;
+}
+
+/* Mejorar la legibilidad durante las animaciones */
+.char-animate,
+.word-animate,
+.line-animate {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos para contenedores de líneas */
+.line-animate {
+  overflow: hidden;
+}
+
+/* Asegurar que los elementos de texto mantengan su estructura */
+h1 .char-animate,
+h2 .char-animate,
+h3 .word-animate,
+h4 .word-animate {
+  will-change: transform, opacity;
 }
