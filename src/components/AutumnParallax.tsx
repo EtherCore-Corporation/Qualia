@@ -31,7 +31,7 @@ const AutumnParallax: React.FC = () => {
         
         // Posiciones iniciales más naturales (lados y arriba)
         const startSide = Math.random() > 0.5 ? 'left' : 'right'; // Lado de entrada
-        let startX, startY;
+        let startX;
         
         if (startSide === 'left') {
           startX = -20 + Math.random() * 30; // Entra desde la izquierda
@@ -39,7 +39,7 @@ const AutumnParallax: React.FC = () => {
           startX = 90 + Math.random() * 30; // Entra desde la derecha
         }
         
-        startY = -200 + Math.random() * 150; // Altura inicial más variable
+        const startY = -200 + Math.random() * 150; // Altura inicial más variable
         
         // HOJAS 5 VECES MÁS GRANDES
         const leafSize = 175 + Math.random() * 125; // 175-300px (era 35-60px)
@@ -186,7 +186,7 @@ const AutumnParallax: React.FC = () => {
     let cleanup: (() => void) | undefined;
     
     const initializeEffects = () => {
-      const scrollLeaves = createFallingLeaves();
+      createFallingLeaves();
       cleanup = createCompanionLeaf();
       
       // Refrescar ScrollTrigger

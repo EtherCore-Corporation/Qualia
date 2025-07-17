@@ -89,7 +89,7 @@ const TextAnimations: React.FC = () => {
             charsClass: "char-animate"
           });
           chars = Array.from(split.chars) as HTMLElement[];
-        } catch (error) {
+        } catch {
           // Fallback manual
           console.log('🔄 SplitText no disponible, usando división manual');
           chars = splitTextManually(titleElement, 'chars');
@@ -158,7 +158,7 @@ const TextAnimations: React.FC = () => {
             wordsClass: "word-animate"
           });
           words = Array.from(split.words) as HTMLElement[];
-        } catch (error) {
+        } catch {
           // Fallback manual
           words = splitTextManually(subtitleElement, 'words');
         }
@@ -244,7 +244,7 @@ const TextAnimations: React.FC = () => {
             wordsClass: "word-animate"
           });
           words = Array.from(split.words) as HTMLElement[];
-        } catch (error) {
+        } catch {
           // Fallback: animar el elemento completo
           gsap.set(blockquoteElement, {
             opacity: 0,

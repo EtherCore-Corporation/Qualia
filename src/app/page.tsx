@@ -117,7 +117,7 @@ export default function Home() {
               Colectivo de investigación y creación de forma y no de silencie, al cuerpo y la palabra en las artes vivas
             </p>
             <blockquote className="text-lg md:text-xl mb-8 italic text-muted" style={{textShadow: '0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(255, 255, 255, 0.8)'}}>
-              "Donde no llega la voz, llega la resonancia; donde no llega la resonancia, llega el silencio; donde no llega el silencio, llega el cuerpo y donde no llega el cuerpo, llega la palabra"
+              &ldquo;Donde no llega la voz, llega la resonancia; donde no llega la resonancia, llega el silencio; donde no llega el silencio, llega el cuerpo y donde no llega el cuerpo, llega la palabra&rdquo;
               <footer className="text-sm mt-2 text-accent" style={{textShadow: '0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(255, 255, 255, 0.8)'}}>— Aristóteles</footer>
             </blockquote>
             
@@ -174,7 +174,7 @@ export default function Home() {
       {/* Workshop Section */}
       <section id="taller" className="py-16 bg-background/85">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-8 text-center animate-fade-in font-serif">"Oye cómo va"</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center animate-fade-in font-serif">&ldquo;Oye cómo va&rdquo;</h2>
           <p className="text-xl text-center mb-12 text-muted">Primera propuesta del colectivo QUALIA</p>
           
           <div className="max-w-4xl mx-auto">
@@ -236,7 +236,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Begoña Frutos</h3>
-                <p className="text-accent mb-4 italic">"El silencio"</p>
+                <p className="text-accent mb-4 italic">&ldquo;El silencio&rdquo;</p>
                 <p className="text-sm text-muted leading-relaxed">
                   Actriz y docente especializada en la investigación del silencio como lenguaje escénico.
                 </p>
@@ -255,7 +255,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Prado Pinilla</h3>
-                <p className="text-accent mb-4 italic">"El cuerpo"</p>
+                <p className="text-accent mb-4 italic">&ldquo;El cuerpo&rdquo;</p>
                 <p className="text-sm text-muted leading-relaxed">
                   Actriz y docente especializada en la expresión corporal y vibración sonora.
                 </p>
@@ -274,7 +274,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Jesús Aladrén</h3>
-                <p className="text-accent mb-4 italic">"El ritmo"</p>
+                <p className="text-accent mb-4 italic">&ldquo;El ritmo&rdquo;</p>
                 <p className="text-sm text-muted leading-relaxed">
                   Investigador de las dimensiones rítmicas y temporales en la expresión artística.
                 </p>
@@ -293,7 +293,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">El Primo de Saint Tropez</h3>
-                <p className="text-accent mb-4 italic">"Los actos pequeños"</p>
+                <p className="text-accent mb-4 italic">&ldquo;Los actos pequeños&rdquo;</p>
                 <p className="text-sm text-muted leading-relaxed">
                   Heterónimo artístico que explora lo sacro y lo profano en las artes vivas.
                       </p>
@@ -312,7 +312,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2 font-serif">Yolanda Ulloa</h3>
-                <p className="text-accent mb-4 italic">"Andar, hablar, pensar"</p>
+                <p className="text-accent mb-4 italic">&ldquo;Andar, hablar, pensar&rdquo;</p>
                 <p className="text-sm text-muted leading-relaxed">
                   Terapeuta biográfica y profesional del Arte de la Palabra (Sprachgestaltung).
                       </p>
@@ -335,7 +335,7 @@ export default function Home() {
               Inscripción al Taller
             </h2>
             <p className="text-xl text-muted leading-relaxed mb-4">
-              "Oye cómo va" - Primera propuesta del colectivo QUALIA
+              &ldquo;Oye cómo va&rdquo; - Primera propuesta del colectivo QUALIA
             </p>
             <div className="flex items-center justify-center gap-2 text-lg mb-2">
               <span className="text-2xl">📍</span>
