@@ -367,6 +367,11 @@ html {
   animation: slide-in 0.8s ease-out;
 }
 
+/* Font utilities */
+.font-playfair {
+  font-family: var(--font-playfair), serif;
+}
+
 /* Custom focus styles */
 button:focus-visible,
 a:focus-visible {

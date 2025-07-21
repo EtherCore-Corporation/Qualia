@@ -359,24 +359,7 @@ const TextAnimations: React.FC = () => {
     };
   }, []);
 
-  return (
-    <div 
-      style={{
-        position: 'fixed',
-        top: '40px',
-        left: '10px',
-        background: 'rgba(0, 0, 0, 0.7)',
-        color: 'white',
-        padding: '5px 10px',
-        borderRadius: '5px',
-        fontSize: '12px',
-        zIndex: 9999,
-        pointerEvents: 'none',
-      }}
-    >
-      ✨ TextAnimations Active
-    </div>
-  );
+  return null;
 };
 
 export default TextAnimations; 
