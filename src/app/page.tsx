@@ -292,29 +292,35 @@ export default function Home() {
                     <p className="text-sm text-muted leading-relaxed">
                       Investigador de las dimensiones rítmicas y temporales en la expresión artística.
                     </p>
-                  </div>
+                                    </div>
                   
-                  {/* Hover Card - Pendiente información */}
+                  {/* Hover Card con propuesta de investigación */}
                   <div className="absolute inset-0 bg-background/95 backdrop-blur-md p-6 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 z-50">
                     <div className="h-full overflow-y-auto">
                       <h4 className="text-lg font-bold mb-4 font-serif text-accent">El ritmo</h4>
-                      <p className="text-sm leading-relaxed">
-Presentación de la obra
-*Ritmo gregoriano:
-Es el arte de ordenar bien el movimiento (San Agustín)
-*Ordenamiento del movimiento (Platón)
-*Tiempo indivisible (Ritmo moderno)
-*Figuras rítmicas
-Tiempos divisibles
-
-Centro del corazón
-El corazón es el único centro de nuestro ser que resuena. Debe haber otros centros que no resuenen; el movimiento debe estar en armonía con el ritmo del corazón.
-Nuestro trabajo consistirá en establecer el cuerpo y profundizar en su movimiento.
--tiempos indivisibles. Ejercicio
--tiempos divisibles. Ejercicio
--disipación del ritmo
--síntesis rítmica del lenguaje
-                      </p>
+                      <div className="space-y-3 text-sm">
+                        <div>
+                          <p className="font-semibold mb-2">Presentación de la obra</p>
+                          <ul className="space-y-1 text-xs">
+                            <li><strong>Ritmo gregoriano:</strong> Es el arte de ordenar bien el movimiento (San Agustín)</li>
+                            <li><strong>Ordenamiento del movimiento</strong> (Platón)</li>
+                            <li><strong>Tiempo indivisible</strong> (Ritmo moderno)</li>
+                            <li><strong>Figuras rítmicas:</strong> Tiempos divisibles</li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <p className="font-semibold mb-2">Centro del corazón</p>
+                          <p className="text-xs mb-2">El corazón es el único centro de nuestro ser que resuena. Debe haber otros centros que no resuenen; el movimiento debe estar en armonía con el ritmo del corazón.</p>
+                          <p className="text-xs mb-2">Nuestro trabajo consistirá en establecer el cuerpo y profundizar en su movimiento.</p>
+                          <ul className="space-y-1 text-xs">
+                            <li>- Tiempos indivisibles. Ejercicio</li>
+                            <li>- Tiempos divisibles. Ejercicio</li>
+                            <li>- Disipación del ritmo</li>
+                            <li>- Síntesis rítmica del lenguaje</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -479,18 +485,45 @@ Nuestro trabajo consistirá en establecer el cuerpo y profundizar en su movimien
                   </p>
                 </div>
 
-                {/* Ritmo */}
+                                {/* Ritmo */}
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
                     <span className="text-3xl mr-4">🥁</span>
                     <h4 className="text-2xl font-bold font-serif">Ritmo</h4>
                   </div>
-                  <p className="text-sm leading-relaxed">
-                    Investigación de las dimensiones rítmicas y temporales en la expresión artística.
-                  </p>
-                  <p className="text-xs italic mt-4 text-muted">
-                    Propuesta completa próximamente disponible
-                  </p>
+                  
+                  <div className="space-y-4">
+                    <div>
+                      <h5 className="text-lg font-bold mb-3 text-accent">Presentación de la obra</h5>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div>
+                          <p className="font-semibold mb-2 text-sm">Conceptos fundamentales:</p>
+                          <ul className="space-y-1 text-sm">
+                            <li><strong>Ritmo gregoriano:</strong> Es el arte de ordenar bien el movimiento (San Agustín)</li>
+                            <li><strong>Ordenamiento del movimiento</strong> (Platón)</li>
+                            <li><strong>Tiempo indivisible</strong> (Ritmo moderno)</li>
+                            <li><strong>Figuras rítmicas:</strong> Tiempos divisibles</li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <p className="font-semibold mb-2 text-sm">Ejercicios prácticos:</p>
+                          <ul className="space-y-1 text-sm">
+                            <li>- Tiempos indivisibles</li>
+                            <li>- Tiempos divisibles</li>
+                            <li>- Disipación del ritmo</li>
+                            <li>- Síntesis rítmica del lenguaje</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="mt-4 p-4 bg-white/10 rounded-lg">
+                      <h6 className="font-semibold mb-2">Centro del corazón</h6>
+                      <p className="text-sm mb-2">El corazón es el único centro de nuestro ser que resuena. Debe haber otros centros que no resuenen; el movimiento debe estar en armonía con el ritmo del corazón.</p>
+                      <p className="text-sm">Nuestro trabajo consistirá en establecer el cuerpo y profundizar en su movimiento.</p>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Andar, Hablar, Pensar */}
