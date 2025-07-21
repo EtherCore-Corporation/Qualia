@@ -208,7 +208,16 @@ export default function Home() {
               {/* Miembros del Colectivo */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 {/* Begoña Frutos */}
-                <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20">
+                <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 cursor-pointer md:cursor-default"
+                     onClick={(e) => {
+                       if (window.innerWidth < 768) {
+                         const card = e.currentTarget;
+                         const hoverCard = card.querySelector('.hover-card');
+                         if (hoverCard) {
+                           hoverCard.classList.toggle('mobile-active');
+                         }
+                       }
+                     }}>
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative z-10 text-center">
                     <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
@@ -226,7 +235,7 @@ export default function Home() {
                   </div>
                   
                   {/* Hover Card con propuesta de investigación */}
-                  <div className="absolute inset-0 bg-background/95 backdrop-blur-md p-6 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 z-50">
+                  <div className="hover-card absolute inset-0 bg-background/95 backdrop-blur-md p-6 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 z-50">
                     <div className="h-full overflow-y-auto">
                       <h4 className="text-lg font-bold mb-4 font-serif text-accent">El silencio como mapa del ser</h4>
                       <p className="text-sm leading-relaxed mb-4">
@@ -242,7 +251,16 @@ export default function Home() {
                   </div>
                 </div>
                 {/* Prado Pinilla */}
-                <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20">
+                <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 cursor-pointer md:cursor-default"
+                     onClick={(e) => {
+                       if (window.innerWidth < 768) {
+                         const card = e.currentTarget;
+                         const hoverCard = card.querySelector('.hover-card');
+                         if (hoverCard) {
+                           hoverCard.classList.toggle('mobile-active');
+                         }
+                       }
+                     }}>
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative z-10 text-center">
                     <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
@@ -260,7 +278,7 @@ export default function Home() {
                   </div>
                   
                   {/* Hover Card con propuesta de investigación */}
-                  <div className="absolute inset-0 bg-background/95 backdrop-blur-md p-6 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 z-50">
+                  <div className="hover-card absolute inset-0 bg-background/95 backdrop-blur-md p-6 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 z-50">
                     <div className="h-full overflow-y-auto">
                       <h4 className="text-lg font-bold mb-4 font-serif text-accent">Cuerpo para la voz/el cuerpo de la voz</h4>
                       <p className="text-sm leading-relaxed mb-4">
@@ -277,7 +295,16 @@ export default function Home() {
                 </div>
 
                 {/* Jesús Aladrén */}
-                <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20">
+                <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 cursor-pointer md:cursor-default"
+                     onClick={(e) => {
+                       if (window.innerWidth < 768) {
+                         const card = e.currentTarget;
+                         const hoverCard = card.querySelector('.hover-card');
+                         if (hoverCard) {
+                           hoverCard.classList.toggle('mobile-active');
+                         }
+                       }
+                     }}>
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative z-10 text-center">
                     <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
@@ -292,10 +319,10 @@ export default function Home() {
                     <p className="text-sm text-muted leading-relaxed">
                       Investigador de las dimensiones rítmicas y temporales en la expresión artística.
                     </p>
-                                    </div>
+                                </div>
                   
                   {/* Hover Card con propuesta de investigación */}
-                  <div className="absolute inset-0 bg-background/95 backdrop-blur-md p-6 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 z-50">
+                  <div className="hover-card absolute inset-0 bg-background/95 backdrop-blur-md p-6 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 z-50">
                     <div className="h-full overflow-y-auto">
                       <h4 className="text-lg font-bold mb-4 font-serif text-accent">El ritmo</h4>
                       <div className="space-y-3 text-sm">
@@ -326,7 +353,16 @@ export default function Home() {
                 </div>
 
                 {/* Yolanda Ulloa */}
-                <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20">
+                <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 cursor-pointer md:cursor-default"
+                     onClick={(e) => {
+                       if (window.innerWidth < 768) {
+                         const card = e.currentTarget;
+                         const hoverCard = card.querySelector('.hover-card');
+                         if (hoverCard) {
+                           hoverCard.classList.toggle('mobile-active');
+                         }
+                       }
+                     }}>
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative z-10 text-center">
                     <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
@@ -344,7 +380,7 @@ export default function Home() {
                   </div>
                   
                   {/* Hover Card con propuesta de investigación */}
-                  <div className="absolute inset-0 bg-background/95 backdrop-blur-md p-6 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 z-50">
+                  <div className="hover-card absolute inset-0 bg-background/95 backdrop-blur-md p-6 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 z-50">
                     <div className="h-full overflow-y-auto">
                       <h4 className="text-lg font-bold mb-4 font-serif text-accent">Andar, hablar, pensar</h4>
                       <p className="text-sm leading-relaxed mb-4">
@@ -361,7 +397,16 @@ export default function Home() {
                 </div>
 
                 {/* El Primo de Saint Tropez */}
-                <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20">
+                <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 cursor-pointer md:cursor-default"
+                     onClick={(e) => {
+                       if (window.innerWidth < 768) {
+                         const card = e.currentTarget;
+                         const hoverCard = card.querySelector('.hover-card');
+                         if (hoverCard) {
+                           hoverCard.classList.toggle('mobile-active');
+                         }
+                       }
+                     }}>
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative z-10 text-center">
                     <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
@@ -379,7 +424,7 @@ export default function Home() {
                   </div>
                   
                   {/* Hover Card con propuesta de investigación */}
-                  <div className="absolute inset-0 bg-background/95 backdrop-blur-md p-6 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 z-50">
+                  <div className="hover-card absolute inset-0 bg-background/95 backdrop-blur-md p-6 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-full group-hover:translate-y-0 z-50">
                     <div className="h-full overflow-y-auto">
                       <h4 className="text-lg font-bold mb-4 font-serif text-accent">Los Actos Pequeños</h4>
                       <p className="text-sm leading-relaxed mb-4">

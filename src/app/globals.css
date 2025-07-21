@@ -372,6 +372,45 @@ html {
   font-family: var(--font-playfair), serif;
 }
 
+/* Mobile hover cards */
+@media (max-width: 767px) {
+  .hover-card.mobile-active {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  /* Show a hint in mobile that cards are clickable */
+  .group:not(.mobile-active) .hover-card::after {
+    content: "👆 Toca para ver más";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+    animation: pulse 2s infinite;
+  }
+  
+  /* Add a subtle indication that cards are interactive */
+  .group {
+    position: relative;
+  }
+  
+  .group::before {
+    content: "💡";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    opacity: 0.6;
+    z-index: 10;
+  }
+}
+
 /* Custom focus styles */
 button:focus-visible,
 a:focus-visible {
