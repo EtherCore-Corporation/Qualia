@@ -3,13 +3,13 @@
 :root {
   --background: #f5f1e8;
   --foreground: #3a2f2a;
-  --accent: #8b4513;
+  --accent: #8b4513;  /* Brown color from logo */
   --secondary: #f9f5f0;
   --border: #d4a574;
   --muted: #8d6e63;
-  --autumn-primary: #d2691e;
+  --autumn-primary: #8b4513;  /* Match accent color */
   --autumn-secondary: #cd853f;
-  --autumn-accent: #daa520;
+  --autumn-accent: #8b4513;  /* Match accent color */
 }
 
 @theme inline {
@@ -457,4 +457,33 @@ h2 .char-animate,
 h3 .word-animate,
 h4 .word-animate {
   will-change: transform, opacity;
+}
+
+/* Qualia brand styles */
+.qualia-text {
+  font-family: var(--font-playfair);
+  color: var(--accent);
+}
+
+.section-title {
+  font-family: var(--font-playfair);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.subsection-title {
+  font-family: var(--font-playfair);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Ensure all headings use Playfair and accent color */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
+  color: var(--accent);
+}
+
+/* Ensure strong/bold text uses accent color */
+strong {
+  color: var(--accent);
 }
