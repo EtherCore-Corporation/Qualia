@@ -84,7 +84,7 @@ export default function Profesores() {
             <div className="relative z-10 text-center">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
                 <Image 
-                  src="/yolanda.jpg" 
+                  src="/Yolanda.jpg" 
                   alt="Yolanda Ulloa" 
                   width={128}
                   height={128}

@@ -16,7 +16,7 @@ export default function YolandaUlloa() {
           <div className="text-center mb-12">
             <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-accent/30">
               <Image 
-                src="/yolanda.jpg" 
+                src="/Yolanda.jpg" 
                 alt="Yolanda Ulloa" 
                 width={192}
                 height={192}
