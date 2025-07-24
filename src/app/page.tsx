@@ -114,17 +114,11 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center relative h-full flex flex-col justify-center items-center" style={{zIndex: 5}}>
           {/* Título principal con margen superior */}
           <div className="mb-8 mt-16 md:mt-20">
-            <div className="flex items-center justify-center gap-6 mb-4">
+            <div className="flex items-center justify-center mb-4">
               <img 
-                src="/Logo symbol.png" 
-                alt="QUALIA Symbol" 
-                className="h-16 md:h-20 lg:h-24 w-auto"
-              />
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold qualia-text">Qualia</h1>
-              <img 
-                src="/Logo symbol.png" 
-                alt="QUALIA Symbol" 
-                className="h-16 md:h-20 lg:h-24 w-auto transform scale-x-[-1]"
+                src="/Logo original.png" 
+                alt="QUALIA Logo" 
+                className="h-32 md:h-40 lg:h-48 w-auto"
               />
             </div>
           </div>
