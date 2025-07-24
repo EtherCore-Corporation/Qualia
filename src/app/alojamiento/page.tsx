@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function AlojamientoPage() {
   return (
@@ -11,9 +12,11 @@ export default function AlojamientoPage() {
         <div className="container mx-auto px-4 py-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img 
+              <Image 
                 src="/logo1.png" 
                 alt="QUALIA Logo" 
+                width={48}
+                height={48}
                 className="h-12 w-auto"
               />
             </div>
@@ -83,19 +86,25 @@ export default function AlojamientoPage() {
                   
                   {/* Galería de imágenes */}
                   <div className="grid grid-cols-2 gap-4 mb-6 rounded-xl overflow-hidden">
-                    <img 
+                    <Image 
                       src="/Fotos del Hostal Jardín de las Eras, en La Algueña.jpeg" 
                       alt="Hostal Jardín de las Eras - Habitación principal"
+                      width={300}
+                      height={128}
                       className="w-full h-32 object-cover hover:scale-110 transition-transform duration-300"
                     />
-                    <img 
+                    <Image 
                       src="/Fotos del Hostal Jardín de las Eras, en La Algueña 2.jpeg" 
                       alt="Hostal Jardín de las Eras - Suite"
+                      width={300}
+                      height={128}
                       className="w-full h-32 object-cover hover:scale-110 transition-transform duration-300"
                     />
-                    <img 
+                    <Image 
                       src="/Fotos del Hostal Jardín de las Eras, en La Algueña 3.jpeg" 
                       alt="Hostal Jardín de las Eras - Habitación moderna"
+                      width={600}
+                      height={128}
                       className="w-full h-32 object-cover hover:scale-110 transition-transform duration-300 col-span-2"
                     />
                   </div>
@@ -144,24 +153,32 @@ export default function AlojamientoPage() {
                   
                   {/* Galería de imágenes */}
                   <div className="grid grid-cols-2 gap-4 mb-6 rounded-xl overflow-hidden">
-                    <img 
+                    <Image 
                       src="/Fotos de la casa rural La Bodega de Barbarroja.jpeg" 
                       alt="Casa Rural La Bodega - Interior principal"
+                      width={300}
+                      height={128}
                       className="w-full h-32 object-cover hover:scale-110 transition-transform duration-300"
                     />
-                    <img 
+                    <Image 
                       src="/Fotos de la casa rural La Bodega de Barbarroja 2.jpeg" 
                       alt="Casa Rural La Bodega - Baño completo"
+                      width={300}
+                      height={128}
                       className="w-full h-32 object-cover hover:scale-110 transition-transform duration-300"
                     />
-                    <img 
+                    <Image 
                       src="/Fotos de la casa rural La Bodega de Barbarroja 3.jpeg" 
                       alt="Casa Rural La Bodega - Habitación acogedora"
+                      width={300}
+                      height={128}
                       className="w-full h-32 object-cover hover:scale-110 transition-transform duration-300"
                     />
-                    <img 
+                    <Image 
                       src="/Fotos de la casa rural La Bodega de Barbarroja 4.jpeg" 
                       alt="Casa Rural La Bodega - Cocina equipada"
+                      width={300}
+                      height={128}
                       className="w-full h-32 object-cover hover:scale-110 transition-transform duration-300"
                     />
                   </div>

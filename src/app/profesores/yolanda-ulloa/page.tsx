@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function YolandaUlloa() {
   return (
@@ -14,9 +15,11 @@ export default function YolandaUlloa() {
           {/* Header */}
           <div className="text-center mb-12">
             <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-accent/30">
-              <img 
+              <Image 
                 src="/yolanda.jpg" 
                 alt="Yolanda Ulloa" 
+                width={192}
+                height={192}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -97,7 +100,7 @@ export default function YolandaUlloa() {
                 <li>Escuela de Teatro del Gesto</li>
                 <li>Palacio de Festivales de Santander</li>
                 <li>TeatroLab - bajo la dirección de Gabriel Olivares</li>
-                <li>Taller Permanente de Teatro "El Tapete" - vinculado al Aula de Teatro de la Complutense y a la RESAD</li>
+                <li>Taller Permanente de Teatro &ldquo;El Tapete&rdquo; - vinculado al Aula de Teatro de la Complutense y a la RESAD</li>
               </ul>
 
               <h3 className="text-xl font-bold mb-4 text-accent">Profesora de Interpretación</h3>

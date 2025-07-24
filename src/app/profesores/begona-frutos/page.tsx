@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function BegonaFrutos() {
   return (
@@ -14,9 +15,11 @@ export default function BegonaFrutos() {
           {/* Header */}
           <div className="text-center mb-12">
             <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-accent/30">
-              <img 
+              <Image 
                 src="/begona.jpg" 
                 alt="Begoña Frutos" 
+                width={192}
+                height={192}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -88,10 +91,10 @@ export default function BegonaFrutos() {
           <div className="mt-8 p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
             <h2 className="text-2xl font-bold mb-6 section-title">Publicaciones</h2>
             <ul className="space-y-4">
-              <li>"La enseñanza de la voz" en el Eco de las voces - Centro de Documentación Teatral</li>
+              <li>&ldquo;La enseñanza de la voz&rdquo; en el Eco de las voces - Centro de Documentación Teatral</li>
               <li>Colaboración en la grabación sonora de Don Juan de Tirso de Molina - Editorial Bolchiro</li>
-              <li>Cuadernos de investigación escénica "El actor del arte a la ciencia" - Editorial Esadib</li>
-              <li>Artículo "La evolución del habla escénica contemporánea" - Universidad de Barcelona</li>
+              <li>Cuadernos de investigación escénica &ldquo;El actor del arte a la ciencia&rdquo; - Editorial Esadib</li>
+              <li>Artículo &ldquo;La evolución del habla escénica contemporánea&rdquo; - Universidad de Barcelona</li>
               <li>Críticas teatrales para la revista Teatro Magazine Connecticut College</li>
               <li>Prólogos para manuales de voz y novelas</li>
             </ul>
@@ -110,15 +113,15 @@ export default function BegonaFrutos() {
                 <h3 className="text-xl font-bold mb-4 text-accent">Teatro</h3>
                 <p className="mb-4">Producciones teatrales destacadas:</p>
                 <ul className="list-disc ml-6 space-y-2">
-                  <li>La ópera de "La Celestina" - Teatro de la Zarzuela</li>
-                  <li>"La ópera de cuatro cuartos" - Dir. Charo Amador</li>
-                  <li>"Después de la lluvia" - Teatro Al Vuelo</li>
-                  <li>"Cinco mujeres con el mismo vestido" - Dir. Celia León</li>
-                  <li>"La casa de Bernarda Alba" - Dir. Óscar Miranda</li>
-                  <li>"Historias de la Vagina" - Dir. Leyre Juan</li>
-                  <li>"Luces de Bohemia"</li>
-                  <li>"La lengua en pedazos" - Juan Mayorga</li>
-                  <li>"Muñecas de Cristal"</li>
+                  <li>La ópera de &ldquo;La Celestina&rdquo; - Teatro de la Zarzuela</li>
+                  <li>&ldquo;La ópera de cuatro cuartos&rdquo; - Dir. Charo Amador</li>
+                  <li>&ldquo;Después de la lluvia&rdquo; - Teatro Al Vuelo</li>
+                  <li>&ldquo;Cinco mujeres con el mismo vestido&rdquo; - Dir. Celia León</li>
+                  <li>&ldquo;La casa de Bernarda Alba&rdquo; - Dir. Óscar Miranda</li>
+                  <li>&ldquo;Historias de la Vagina&rdquo; - Dir. Leyre Juan</li>
+                  <li>&ldquo;Luces de Bohemia&rdquo;</li>
+                  <li>&ldquo;La lengua en pedazos&rdquo; - Juan Mayorga</li>
+                  <li>&ldquo;Muñecas de Cristal&rdquo;</li>
                 </ul>
               </div>
 

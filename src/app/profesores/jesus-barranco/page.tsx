@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function JesusBarranco() {
   return (
@@ -14,9 +15,11 @@ export default function JesusBarranco() {
           {/* Header */}
           <div className="text-center mb-12">
             <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-accent/30">
-              <img 
+              <Image 
                 src="/primo.jpg" 
                 alt="Jesús Barranco" 
+                width={192}
+                height={192}
                 className="w-full h-full object-cover"
               />
             </div>

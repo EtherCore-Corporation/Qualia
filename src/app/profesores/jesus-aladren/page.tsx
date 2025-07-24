@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function JesusAladren() {
   return (
@@ -14,9 +15,11 @@ export default function JesusAladren() {
           {/* Header */}
           <div className="text-center mb-12">
             <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-accent/30">
-              <img 
+              <Image 
                 src="/jesus.jpg" 
                 alt="Jesús Aladrén" 
+                width={192}
+                height={192}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -29,7 +32,7 @@ export default function JesusAladren() {
             <h2 className="text-2xl font-bold mb-6 section-title">Formación</h2>
             <div className="space-y-4">
               <p className="text-lg">
-                En 1973 comienza sus estudios vocales en la disciplina de "Ortofonía y Dicción", bajo la dirección de Pilar Francés y posteriormente con Eva Ader y Agustín García calvo.
+                En 1973 comienza sus estudios vocales en la disciplina de &ldquo;Ortofonía y Dicción&rdquo;, bajo la dirección de Pilar Francés y posteriormente con Eva Ader y Agustín García calvo.
               </p>
               <p className="text-lg">
                 Su trabajo con el Doctor López Rico, especialista en otorrinolaringología, le llevará a una especialización en el tratamiento de patologías vocales.
@@ -42,11 +45,11 @@ export default function JesusAladren() {
             <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
               <h2 className="text-2xl font-bold mb-6 section-title">Experiencia Pedagógica como Ortofonista</h2>
               <ul className="space-y-4">
-                <li>Centro de estudios musicales y teatrales "Musicvox"</li>
+                <li>Centro de estudios musicales y teatrales &ldquo;Musicvox&rdquo;</li>
                 <li>Real Escuela Superior de Arte Dramático</li>
-                <li>Escuela de Música y Teatro "Orfeo" (Director y fundador)</li>
-                <li>Taller de teatro "Tántara", en Madrid y Santiago de Compostela (director y fundador)</li>
-                <li>Gabinete de investigación de la voz "Tántara" (director)</li>
+                <li>Escuela de Música y Teatro &ldquo;Orfeo&rdquo; (Director y fundador)</li>
+                <li>Taller de teatro &ldquo;Tántara&rdquo;, en Madrid y Santiago de Compostela (director y fundador)</li>
+                <li>Gabinete de investigación de la voz &ldquo;Tántara&rdquo; (director)</li>
               </ul>
             </div>
 
@@ -62,10 +65,10 @@ export default function JesusAladren() {
                 </li>
                 <li>Instituto Británico</li>
                 <li>Teatro Español</li>
-                <li>Fundación "AISGE" Madrid</li>
+                <li>Fundación &ldquo;AISGE&rdquo; Madrid</li>
                 <li>Circulo de Bellas Artes Madrid</li>
-                <li>Estudios de doblaje "El Moro" en Santiago de Compostela</li>
-                <li>"UR Teatro" Rentería</li>
+                <li>Estudios de doblaje &ldquo;El Moro&rdquo; en Santiago de Compostela</li>
+                <li>&ldquo;UR Teatro&rdquo; Rentería</li>
                 <li>Cursos para actores, dobladores y locutores (INEM - Santiago de Compostela)</li>
                 <li>Curso de oratoria para un grupo político</li>
               </ul>
@@ -113,7 +116,7 @@ export default function JesusAladren() {
 
             {/* El Moro */}
             <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-              <h3 className="text-2xl font-bold mb-6 section-title">Empresa de doblaje "El Moro"</h3>
+              <h3 className="text-2xl font-bold mb-6 section-title">Empresa de doblaje &ldquo;El Moro&rdquo;</h3>
               <p className="mb-4">
                 Durante los inicios del doblaje en Galicia, participó en la formación de profesionales.
               </p>

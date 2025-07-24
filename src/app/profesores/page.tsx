@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Profesores() {
   return (
@@ -16,9 +17,11 @@ export default function Profesores() {
           >
             <div className="relative z-10 text-center">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
-                <img 
+                <Image 
                   src="/jesus.jpg" 
                   alt="Jesús Aladrén" 
+                  width={128}
+                  height={128}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -36,9 +39,11 @@ export default function Profesores() {
           >
             <div className="relative z-10 text-center">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
-                <img 
+                <Image 
                   src="/begona.jpg" 
                   alt="Begoña Frutos" 
+                  width={128}
+                  height={128}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -56,9 +61,11 @@ export default function Profesores() {
           >
             <div className="relative z-10 text-center">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
-                <img 
+                <Image 
                   src="/prado.jpg" 
                   alt="Prado Pinilla" 
+                  width={128}
+                  height={128}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -76,9 +83,11 @@ export default function Profesores() {
           >
             <div className="relative z-10 text-center">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
-                <img 
+                <Image 
                   src="/yolanda.jpg" 
                   alt="Yolanda Ulloa" 
+                  width={128}
+                  height={128}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -96,9 +105,11 @@ export default function Profesores() {
           >
             <div className="relative z-10 text-center">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
-                <img 
+                <Image 
                   src="/primo.jpg" 
                   alt="Jesús Barranco" 
+                  width={128}
+                  height={128}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>

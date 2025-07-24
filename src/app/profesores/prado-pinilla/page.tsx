@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function PradoPinilla() {
   return (
@@ -14,9 +15,11 @@ export default function PradoPinilla() {
           {/* Header */}
           <div className="text-center mb-12">
             <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-accent/30">
-              <img 
+              <Image 
                 src="/prado.jpg" 
                 alt="Prado Pinilla" 
+                width={192}
+                height={192}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -62,7 +65,7 @@ export default function PradoPinilla() {
               <ul className="space-y-4">
                 <li>Graduada en Artes Escénicas por la Universidad Rey Juan Carlos - Escuela Universitaria de Artes TAI</li>
                 <li>Maestra acreditada en el Método Linklater - Linklater Center for Voice and Language</li>
-                <li>Diplomada en Arte Dramático por la Scuola Internazionale di Teatro "Circo a Vapore"</li>
+                <li>Diplomada en Arte Dramático por la Scuola Internazionale di Teatro &ldquo;Circo a Vapore&rdquo;</li>
                 <li>Curso de especialización para profesionales de la actuación en la Fundación Teatro de La Abadía</li>
               </ul>
             </div>
@@ -123,9 +126,9 @@ export default function PradoPinilla() {
           <div className="mt-8 p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
             <h2 className="text-2xl font-bold mb-6 section-title">Premios y Reconocimientos</h2>
             <ul className="space-y-4">
-              <li>Nominada a los Premios de la Unión de Actores en la categoría de mejor actriz secundaria por Sargento Garzón en "A Saco"</li>
-              <li>Nominada a los Premios Max como mejor actriz secundaria por Mi-Tzú en "La Buena Persona de Sezuán"</li>
-              <li>Nominada a los Premios Max como mejor actriz de reparto por Madame Pimentón en "La Mujer de la Sinmemoria"</li>
+              <li>Nominada a los Premios de la Unión de Actores en la categoría de mejor actriz secundaria por Sargento Garzón en &ldquo;A Saco&rdquo;</li>
+              <li>Nominada a los Premios Max como mejor actriz secundaria por Mi-Tzú en &ldquo;La Buena Persona de Sezuán&rdquo;</li>
+              <li>Nominada a los Premios Max como mejor actriz de reparto por Madame Pimentón en &ldquo;La Mujer de la Sinmemoria&rdquo;</li>
             </ul>
           </div>
 

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import AutumnParallax from '../components/AutumnParallax';
 import TextAnimations from '../components/TextAnimations';
+import Image from 'next/image';
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,9 +19,11 @@ export default function Home() {
         <div className="container mx-auto px-4 py-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img 
+              <Image 
                 src="/Logo original.png" 
                 alt="QUALIA Logo" 
+                width={80}
+                height={80}
                 className="h-20 w-auto"
               />
             </div>
@@ -97,16 +100,20 @@ export default function Home() {
       <section id="inicio" className="relative min-h-screen pt-16 pb-12 overflow-hidden" style={{zIndex: 10}}>
         {/* Árboles de otoño - ocupando toda la altura desde abajo hasta arriba */}
         <div className="absolute inset-y-0 left-0 w-96 md:w-[28rem] lg:w-[32rem] xl:w-[36rem] opacity-80" style={{zIndex: 2}}>
-          <img 
+          <Image 
             src="/10.png" 
             alt="Autumn tree left" 
+            width={500}
+            height={800}
             className="w-full h-full object-contain object-bottom"
           />
         </div>
         <div className="hidden md:block absolute inset-y-0 right-0 w-96 md:w-[28rem] lg:w-[32rem] xl:w-[36rem] opacity-80 transform scale-x-[-1]" style={{zIndex: 2}}>
-          <img 
+          <Image 
             src="/10.png" 
             alt="Autumn tree right" 
+            width={500}
+            height={800}
             className="w-full h-full object-contain object-bottom"
           />
         </div>
@@ -115,9 +122,12 @@ export default function Home() {
           {/* Título principal con margen superior */}
           <div className="mb-8 mt-16 md:mt-20">
             <div className="flex items-center justify-center mb-4">
-              <img 
+              <Image 
                 src="/Logo original.png" 
                 alt="QUALIA Logo" 
+                width={400}
+                height={200}
+                priority
                 className="h-32 md:h-40 lg:h-48 w-auto"
               />
             </div>
@@ -205,9 +215,11 @@ export default function Home() {
                 <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20">
                   <div className="relative z-10 text-center">
                     <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
-                      <img 
+                      <Image 
                         src="/jesus.jpg" 
                         alt="Jesús Aladrén" 
+                        width={128}
+                        height={128}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -230,9 +242,11 @@ export default function Home() {
                 <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20">
                   <div className="relative z-10 text-center">
                     <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
-                      <img 
+                      <Image 
                         src="/begona.jpg" 
                         alt="Begoña Frutos" 
+                        width={128}
+                        height={128}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -255,9 +269,11 @@ export default function Home() {
                 <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20">
                   <div className="relative z-10 text-center">
                     <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
-                      <img 
+                      <Image 
                         src="/prado.jpg" 
                         alt="Prado Pinilla" 
+                        width={128}
+                        height={128}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -280,9 +296,11 @@ export default function Home() {
                 <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20">
                   <div className="relative z-10 text-center">
                     <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
-                      <img 
+                      <Image 
                         src="/yolanda.jpg" 
                         alt="Yolanda Ulloa" 
+                        width={128}
+                        height={128}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -305,9 +323,11 @@ export default function Home() {
                 <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20">
                   <div className="relative z-10 text-center">
                     <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
-                      <img 
+                      <Image 
                         src="/primo.jpg" 
                         alt="Jesús Barranco" 
+                        width={128}
+                        height={128}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -384,7 +404,7 @@ export default function Home() {
                 {/* Cuerpo */}
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
-                    <img src="/3.png" alt="Leaf icon" className="w-12 h-12 mr-4" />
+                    <Image src="/3.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
                     <h4 className="text-2xl font-bold section-title">Cuerpo para la voz - el cuerpo de la voz</h4>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
@@ -401,7 +421,7 @@ export default function Home() {
                 {/* Ritmo */}
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
-                    <img src="/4.png" alt="Leaf icon" className="w-12 h-12 mr-4" />
+                    <Image src="/4.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
                     <h4 className="text-2xl font-bold section-title">Ritmo - Centro del corazón</h4>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
@@ -412,7 +432,7 @@ export default function Home() {
                 {/* Andar, Hablar, Pensar */}
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
-                    <img src="/5.png" alt="Leaf icon" className="w-12 h-12 mr-4" />
+                    <Image src="/5.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
                     <h4 className="text-2xl font-bold section-title">Andar, hablar, pensar</h4>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
@@ -426,7 +446,7 @@ export default function Home() {
                 {/* Los actos pequeños */}
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
-                    <img src="/6.png" alt="Leaf icon" className="w-12 h-12 mr-4" />
+                    <Image src="/6.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
                     <h4 className="text-2xl font-bold section-title">Los actos pequeños</h4>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
@@ -461,14 +481,18 @@ export default function Home() {
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
-                  <img 
+                  <Image 
                     src="/1320190343-cor-016-casa-musica-music-house-alguena-39.jpg" 
                     alt="El Muca - Casa de Música - Espacio interior"
+                    width={400}
+                    height={192}
                     className="w-full h-48 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
                   />
-                  <img 
+                  <Image 
                     src="/cor_016_hq_casa_musica_music_house_alguena_11.jpg" 
                     alt="El Muca - Casa de Música - Ambiente acogedor"
+                    width={400}
+                    height={192}
                     className="w-full h-48 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
                   />
                 </div>
