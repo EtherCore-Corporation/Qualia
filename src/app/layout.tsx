@@ -19,10 +19,10 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "QUALIA - Colectivo de investigación artística",
-  description: "Colectivo de investigación y creación en torno a la voz, el silencio, el cuerpo y la palabra en las Artes Vivas",
+  title: "Qualia - Colectivo de investigación artística",
+  description: "Colectivo de investigación y creación en torno a la voz, el silencio, el cuerpo y la palabra",
   keywords: ["artes vivas", "investigación artística", "voz", "silencio", "cuerpo", "palabra"],
-  authors: [{ name: "Colectivo QUALIA" }],
+  authors: [{ name: "Colectivo Qualia" }],
 };
 
 export const viewport = {

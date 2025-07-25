@@ -7,7 +7,7 @@ export default function Profesores() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-12 text-center section-title">Profesores</h1>
+        <h1 className="text-4xl font-bold mb-12 text-center section-title">Colectivo</h1>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Jesús Aladrén */}

@@ -3,10 +3,28 @@
 import React, { useState } from 'react';
 import AutumnParallax from '../components/AutumnParallax';
 import TextAnimations from '../components/TextAnimations';
+import ContactForm from '../components/ContactForm';
+import { submitContactForm } from '../services/contact';
 import Image from 'next/image';
+import Link from 'next/link';
+import { ContactFormData } from '../types/contact';
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleContactSubmit = async (formData: ContactFormData) => {
+    try {
+      setIsSubmitting(true);
+      await submitContactForm(formData);
+      alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background text-foreground parallax-container">
@@ -21,7 +39,7 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <Image 
                 src="/Logo original.png" 
-                alt="QUALIA Logo" 
+                alt="Qualia Logo" 
                 width={80}
                 height={80}
                 className="h-20 w-auto"
@@ -124,7 +142,7 @@ export default function Home() {
             <div className="flex items-center justify-center mb-4">
               <Image 
                 src="/Logo original.png" 
-                alt="QUALIA Logo" 
+                alt="Qualia Logo" 
                 width={400}
                 height={200}
                 priority
@@ -144,7 +162,7 @@ export default function Home() {
             </blockquote>
             
             <p className="text-lg mb-8 max-w-3xl mx-auto autumn-text">
-              QUALIA es un espacio de encuentro donde la investigación artística se convierte en experiencia viva. Exploramos las dimensiones más sutiles de la expresión humana, donde el silencio habla y el cuerpo piensa.
+              Qualia es un espacio de encuentro donde la investigación artística se convierte en experiencia viva. Exploramos las dimensiones más sutiles de la expresión humana, donde el silencio habla y el cuerpo piensa.
             </p>
           </div>
         </div>
@@ -174,7 +192,7 @@ export default function Home() {
       <section id="que-es-qualia" className="py-16 bg-secondary/85">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center section-title">Qué es QUALIA</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center section-title">Qué es Qualia</h2>
             
             {/* Introducción principal */}
             <div className="mb-12 p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
@@ -186,7 +204,7 @@ export default function Home() {
                 siempre se pueden describir, puedan ser contempladas y resignificadas.
               </p>
               <p className="text-lg leading-relaxed animate-slide-in text-center italic">
-                Para crear un espacio de escucha, <span className="qualia-text">QUALIA</span>, en donde el silencio pueda desvelarnos sus 
+                Para crear un espacio de escucha, <span className="qualia-text">Qualia</span>, en donde el silencio pueda desvelarnos sus 
                 secretos desde las voces que somos, iniciamos, con mucho cariño y alegría, este proyecto de 
                 encuentros con la voz propia. Un encuentro puntual y veraniego.
               </p>
@@ -194,7 +212,7 @@ export default function Home() {
 
             {/* El Colectivo */}
             <div className="mb-12">
-              <h3 className="text-3xl font-bold mb-8 text-center section-title">Colectivo QUALIA</h3>
+              <h3 className="text-3xl font-bold mb-8 text-center section-title">Colectivo Qualia</h3>
               <div className="mb-12 p-8 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/15 rounded-3xl">
                 <p className="text-lg leading-relaxed animate-slide-in mb-6">
                   El Colectivo <span className="qualia-text">Qualia</span> se conforma como un <strong>proyecto de creación y experimentación</strong> con la 
@@ -231,7 +249,7 @@ export default function Home() {
                       <a href="https://www.example.com/jesus-aladren" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                         Ver formación académica →
                       </a>
-                      <a href="/profesores/jesus-aladren" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
+                      <a href="/colectivo/jesus-aladren" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
                         Ver biografía completa
                       </a>
                     </div>
@@ -258,7 +276,7 @@ export default function Home() {
                       <a href="https://www.resad.es/voz-lenguaje.html" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                         Ver formación académica →
                       </a>
-                      <a href="/profesores/begona-frutos" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
+                      <a href="/colectivo/begona-frutos" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
                         Ver biografía completa
                       </a>
                     </div>
@@ -285,7 +303,7 @@ export default function Home() {
                       <a href="https://taiarts.com/claustro/prado-pinilla/" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                         Ver formación académica →
                       </a>
-                      <a href="/profesores/prado-pinilla" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
+                      <a href="/colectivo/prado-pinilla" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
                         Ver biografía completa
                       </a>
                     </div>
@@ -312,7 +330,7 @@ export default function Home() {
                       <a href="https://www.yolandaulloa.es" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                         Ver formación académica →
                       </a>
-                      <a href="/profesores/yolanda-ulloa" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
+                      <a href="/colectivo/yolanda-ulloa" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
                         Ver biografía completa
                       </a>
                     </div>
@@ -339,7 +357,7 @@ export default function Home() {
                       <a href="#" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                         Ver formación académica →
                       </a>
-                      <a href="/profesores/jesus-barranco" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
+                      <a href="/colectivo/jesus-barranco" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
                         Ver biografía completa
                       </a>
                     </div>
@@ -358,7 +376,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto mb-12 p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
             <h3 className="text-2xl font-bold mb-6 text-center section-title">&ldquo;Oye cómo va&rdquo;</h3>
             <p className="text-lg leading-relaxed text-center">
-              &ldquo;Oye cómo va&rdquo; es la primera propuesta que surge desde el Colectivo <span className="qualia-text">QUALIA</span> atendiendo a los cinco modos de pensarla en sus prácticas artísticas y pedagógicas.
+              &ldquo;Oye cómo va&rdquo; es la primera propuesta que surge desde el Colectivo <span className="qualia-text">Qualia</span> atendiendo a los cinco modos de pensarla en sus prácticas artísticas y pedagógicas.
             </p>
             <p className="text-lg leading-relaxed text-center mt-4">
               Una propuesta abierta, dirigida principalmente a <strong>creadores y creadoras</strong> que deseen preguntarse su VOZ ó la VOZ en el campo de las Artes Vivas: actores, performers, directores, dramaturgos, escritores. Y, por supuesto, también a todo aquel interesado en esta aventura.
@@ -601,7 +619,7 @@ export default function Home() {
                     <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
                       <span className="text-accent font-bold">2</span>
                     </div>
-                    <p className="text-sm">Envía el comprobante a <strong>hola@qualia-colectivo.es</strong> o por WhatsApp</p>
+                    <p className="text-sm">Envía el comprobante a <strong>contacto@espacioqualia.com</strong> o por WhatsApp</p>
                   </div>
                   <div className="text-center">
                     <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -645,6 +663,18 @@ export default function Home() {
                   <p className="text-sm text-muted mb-3">Para reservas y pagos completos</p>
                   <div className="bg-white/20 rounded-lg p-3 space-y-2">
                     <div className="text-center">
+                      <p className="text-xs text-muted">Titular:</p>
+                      <p className="font-mono text-accent font-bold">
+                        Yolanda Alvarez Ulloa
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-xs text-muted">Banco:</p>
+                      <p className="font-mono text-accent font-bold">
+                        Caixabank
+                      </p>
+                    </div>
+                    <div className="text-center">
                       <p className="text-xs text-muted">IBAN:</p>
                       <p className="font-mono text-accent font-bold">
                         ES43 2100 3392 7013 0043 7984
@@ -652,7 +682,7 @@ export default function Home() {
                     </div>
                     <div className="text-center pt-2 border-t border-white/20">
                       <p className="text-xs text-muted">Concepto:</p>
-                      <p className="font-semibold text-sm">QUALIA - [Tu Nombre]</p>
+                      <p className="font-semibold text-sm">Qualia - [Tu Nombre]</p>
                     </div>
                   </div>
                 </div>
@@ -672,11 +702,19 @@ export default function Home() {
                   Deberás gestionar tu reserva directamente con el establecimiento elegido.
                 </p>
                 <p className="text-sm text-muted mb-6">
-                  La información detallada sobre opciones de alojamiento y comida se proporcionará una vez confirmada tu inscripción.
+                  Hemos preparado información detallada sobre todas las opciones de alojamiento y comida disponibles.
                 </p>
-                <p className="text-sm text-accent">
-                  Para más información, contacta con nosotros por correo o WhatsApp.
-                </p>
+                <div className="flex flex-col items-center gap-4">
+                  <Link 
+                    href="/alojamiento" 
+                    className="inline-flex items-center gap-2 bg-accent text-background px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors"
+                  >
+                    🏡 Ver opciones de alojamiento
+                  </Link>
+                  <p className="text-sm text-accent">
+                    Para más información, contacta con nosotros por correo o WhatsApp.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -686,7 +724,7 @@ export default function Home() {
       {/* Contact Section */}
       <section id="conecta" className="py-16 bg-secondary/85">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-8 text-center animate-fade-in font-serif">Conecta con QUALIA</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center animate-fade-in font-serif">Conecta con Qualia</h2>
           <p className="text-lg text-center mb-12 max-w-3xl mx-auto">
             ¿Tienes preguntas sobre nuestras propuestas? ¿Te interesa participar en nuestros encuentros? 
             Nos encantaría conocerte y compartir contigo este camino de exploración artística.
@@ -698,8 +736,8 @@ export default function Home() {
               <div className="space-y-4">
                 <p className="flex items-center gap-2">
                   <span className="font-semibold">Email:</span>
-                  <a href="mailto:hola@qualia-colectivo.es" className="text-accent hover:underline">
-                    hola@qualia-colectivo.es
+                  <a href="mailto:contacto@espacioqualia.com" className="text-accent hover:underline">
+                    contacto@espacioqualia.com
                   </a>
                 </p>
                 <p className="flex items-center gap-2">
@@ -717,34 +755,7 @@ export default function Home() {
             
             <div className="bg-background/90 rounded-lg p-8">
               <h3 className="text-2xl font-bold mb-6 font-serif">Envíanos un mensaje</h3>
-              <form className="space-y-4">
-                <input
-                  type="text"
-                  placeholder="Tu nombre"
-                  className="w-full p-3 border border-border rounded-lg bg-background focus:outline-none focus:ring-2 focus:ring-accent"
-                />
-                <input
-                  type="email"
-                  placeholder="tu@email.com"
-                  className="w-full p-3 border border-border rounded-lg bg-background focus:outline-none focus:ring-2 focus:ring-accent"
-                />
-                <input
-                  type="tel"
-                  placeholder="+34 600 000 000"
-                  className="w-full p-3 border border-border rounded-lg bg-background focus:outline-none focus:ring-2 focus:ring-accent"
-                />
-                <textarea
-                  placeholder="Cuéntanos qué te interesa de QUALIA..."
-                  rows={4}
-                  className="w-full p-3 border border-border rounded-lg bg-background focus:outline-none focus:ring-2 focus:ring-accent"
-                />
-                <button
-                  type="submit"
-                  className="w-full bg-accent text-background py-3 rounded-lg hover:bg-accent/90 transition-colors"
-                >
-                  Enviar mensaje
-                </button>
-              </form>
+              <ContactForm onSubmit={handleContactSubmit} isSubmitting={isSubmitting} />
             </div>
           </div>
         </div>
@@ -804,7 +815,7 @@ export default function Home() {
               {/* Diseño web */}
               <div className="text-center p-6 bg-secondary/90 rounded-lg">
                 <h3 className="text-lg font-bold mb-2 font-serif">Diseño Web</h3>
-                <p className="text-sm text-muted">Desarrollo y diseño</p>
+                <p className="text-sm text-muted">Ibai San Millan Gomez [EtherCore] <a href="https://ether-core.com" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">ether-core.com</a></p>
               </div>
             </div>
             
@@ -821,12 +832,24 @@ export default function Home() {
       <footer className="bg-accent text-background py-8">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-2 font-playfair">QUALIA</h3>
+            <div className="flex justify-center items-center gap-4 mb-4">
+              <Image 
+                src="/logohombreazul.png" 
+                alt="El arte de la palabra creativa" 
+                width={60}
+                height={60}
+                className="w-auto h-16"
+              />
+              <h3 className="text-2xl font-bold font-playfair">Qualia</h3>
+            </div>
             <p className="text-background/80">
               Colectivo de investigación y creación en torno a la voz, el silencio, el cuerpo y la palabra
             </p>
+            <p className="text-sm text-background/60 mt-2">
+              El arte de la palabra creativa
+            </p>
             <p className="text-background/60 mt-4">
-              © 2024 QUALIA. Todos los derechos reservados.
+              © 2024 Qualia. Todos los derechos reservados.
             </p>
           </div>
         </div>

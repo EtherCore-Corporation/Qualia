@@ -7,8 +7,8 @@ export default function BegonaFrutos() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-4 py-16">
-        <Link href="/profesores" className="inline-flex items-center text-accent hover:text-accent/80 mb-8">
-          ← Volver a Profesores
+        <Link href="/colectivo" className="inline-flex items-center text-accent hover:text-accent/80 mb-8">
+          ← Volver al Colectivo
         </Link>
 
         <div className="max-w-4xl mx-auto">

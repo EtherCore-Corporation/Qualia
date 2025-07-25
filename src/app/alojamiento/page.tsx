@@ -14,7 +14,7 @@ export default function AlojamientoPage() {
             <div className="flex items-center gap-3">
               <Image 
                 src="/logo1.png" 
-                alt="QUALIA Logo" 
+                alt="Qualia Logo" 
                 width={48}
                 height={48}
                 className="h-12 w-auto"
@@ -36,7 +36,7 @@ export default function AlojamientoPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6 font-playfair">Alojamiento y Comida</h1>
           <p className="text-xl text-muted max-w-3xl mx-auto">
-            Opciones completas para tu estancia durante el taller QUALIA en La Algueña
+            Opciones completas para tu estancia durante el taller Qualia en La Algueña
           </p>
           <div className="flex items-center justify-center gap-2 text-lg mt-4">
             <span className="text-2xl">📍</span>
@@ -415,7 +415,7 @@ export default function AlojamientoPage() {
       {/* Footer */}
       <footer className="bg-accent text-background py-12">
         <div className="container mx-auto px-4 text-center">
-          <h3 className="text-3xl font-bold mb-4 font-playfair">QUALIA</h3>
+          <h3 className="text-3xl font-bold mb-4 font-playfair">Qualia</h3>
           <p className="text-background/80 mb-6">
             Colectivo de investigación y creación en torno a la voz, el silencio, el cuerpo y la palabra
           </p>
