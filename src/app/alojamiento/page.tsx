@@ -413,18 +413,32 @@ export default function AlojamientoPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-accent text-background py-12">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-3xl font-bold mb-4 font-playfair">Qualia</h3>
-          <p className="text-background/80 mb-6">
-            Colectivo de investigación y creación en torno a la voz, el silencio, el cuerpo y la palabra
-          </p>
-          <Link 
-            href="/" 
-            className="inline-flex items-center gap-2 bg-background text-accent px-6 py-3 rounded-lg hover:bg-background/90 transition-colors font-semibold"
-          >
-            ← Volver a la página principal
-          </Link>
+      <footer className="bg-accent text-background py-8">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <div className="flex justify-center items-center gap-4 mb-4">
+              <Image 
+                src="/logo_footer.png" 
+                alt="El arte de la palabra creativa" 
+                width={180}
+                height={180}
+                className="w-auto h-48"
+              />
+              <h3 className="text-2xl font-bold font-playfair">Qualia</h3>
+            </div>
+            <p className="text-background/80">
+              El arte de la palabra creativa, Escuela de Voz.
+            </p>
+            <p className="text-background/60 mt-4">
+              © 2025 Qualia. Todos los derechos reservados.
+            </p>
+            <Link 
+              href="/" 
+              className="inline-flex items-center gap-2 bg-background text-accent px-6 py-3 rounded-lg hover:bg-background/90 transition-colors font-semibold mt-6"
+            >
+              ← Volver a la página principal
+            </Link>
+          </div>
         </div>
       </footer>
     </div>

@@ -21,8 +21,12 @@ const playfairDisplay = Playfair_Display({
 export const metadata: Metadata = {
   title: "Qualia - Colectivo de investigación artística",
   description: "Colectivo de investigación y creación en torno a la voz, el silencio, el cuerpo y la palabra",
-  keywords: ["artes vivas", "investigación artística", "voz", "silencio", "cuerpo", "palabra"],
   authors: [{ name: "Colectivo Qualia" }],
+  keywords: ["artes vivas", "investigación artística", "voz", "silencio", "cuerpo", "palabra"],
+  icons: {
+    icon: '/Logo original.png',
+    apple: '/Logo original.png',
+  },
 };
 
 export const viewport = {
@@ -37,6 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <link rel="icon" href="/Logo original.png" />
+        <link rel="apple-touch-icon" href="/Logo original.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased`}
       >

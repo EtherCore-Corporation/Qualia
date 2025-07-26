@@ -49,7 +49,7 @@ export default function Home() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <a href="#que-es-qualia" className="hover:text-accent transition-colors">Qué es Qualia</a>
-              <a href="#colectivo-qualia" className="hover:text-accent transition-colors">Colectivo Qualia</a>
+              <a href="/colectivo" className="hover:text-accent transition-colors">Colectivo Qualia</a>
               <a href="#propuesta-investigacion" className="hover:text-accent transition-colors">Propuesta de investigación</a>
               <a href="#inscripcion" className="hover:text-accent transition-colors">Inscripción</a>
               <a href="#conecta" className="hover:text-accent transition-colors">Conecta con Qualia</a>
@@ -423,7 +423,10 @@ export default function Home() {
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
                     <Image src="/3.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                    <h4 className="text-2xl font-bold section-title">Cuerpo para la voz - el cuerpo de la voz</h4>
+                    <div>
+                      <h4 className="text-2xl font-bold section-title">Cuerpo para la voz - el cuerpo de la voz</h4>
+                      <p className="text-sm text-accent mt-1">Por Prado Pinilla</p>
+                    </div>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
                     ¿Qué sucede cuando la vibración es capaz de viajar libremente y multiplicarse en el cuerpo a través de canales que, previamente, se han dispuesto para ello? ¿Puede ese hecho afectar a las funciones interoceptivas y propioceptivas del individuo?
@@ -440,7 +443,10 @@ export default function Home() {
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
                     <Image src="/4.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                    <h4 className="text-2xl font-bold section-title">Ritmo - Centro del corazón</h4>
+                    <div>
+                      <h4 className="text-2xl font-bold section-title">Ritmo - Centro del corazón</h4>
+                      <p className="text-sm text-accent mt-1">Por Jesús Aladrén</p>
+                    </div>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
                     Investigación del ritmo desde el centro del corazón. El corazón como único centro de nuestro ser que resuena. El movimiento debe estar en armonía con el ritmo del corazón. Nuestro trabajo consistirá en establecer el cuerpo del ritmo y profundizar en su movimiento.
@@ -451,7 +457,10 @@ export default function Home() {
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
                     <Image src="/5.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                    <h4 className="text-2xl font-bold section-title">Andar, hablar, pensar</h4>
+                    <div>
+                      <h4 className="text-2xl font-bold section-title">Andar, hablar, pensar</h4>
+                      <p className="text-sm text-accent mt-1">Por Begoña Frutos</p>
+                    </div>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
                     Planteo el estudio consciente de este recorrido en concreto como base o fundamento para el desarrollo de todo proceso artístico y creativo. Y planteo así mismo un ejercicio de investigación sobre la correlación de estas tres facultades humanas y sobre el asombroso sentido del lugar intermedio que ocupa el habla.
@@ -465,7 +474,10 @@ export default function Home() {
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
                     <Image src="/6.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                    <h4 className="text-2xl font-bold section-title">Los actos pequeños</h4>
+                    <div>
+                      <h4 className="text-2xl font-bold section-title">Los actos pequeños</h4>
+                      <p className="text-sm text-accent mt-1">Por Yolanda Ulloa</p>
+                    </div>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
                     Después del silencio, del segundo silencio, surge de nuevo la palabra. El anhelo sería entrenar desde el misterio y descubrir lo que surge cuando se quiere decir lo inefable.
@@ -834,22 +846,19 @@ export default function Home() {
           <div className="text-center">
             <div className="flex justify-center items-center gap-4 mb-4">
               <Image 
-                src="/logohombreazul.png" 
+                src="/logo_footer.png" 
                 alt="El arte de la palabra creativa" 
-                width={60}
-                height={60}
-                className="w-auto h-16"
+                width={180}
+                height={180}
+                className="w-auto h-48"
               />
               <h3 className="text-2xl font-bold font-playfair">Qualia</h3>
             </div>
             <p className="text-background/80">
-              Colectivo de investigación y creación en torno a la voz, el silencio, el cuerpo y la palabra
-            </p>
-            <p className="text-sm text-background/60 mt-2">
-              El arte de la palabra creativa
+              El arte de la palabra creativa, Escuela de Voz.
             </p>
             <p className="text-background/60 mt-4">
-              © 2024 Qualia. Todos los derechos reservados.
+              © 2025 Qualia. Todos los derechos reservados.
             </p>
           </div>
         </div>
