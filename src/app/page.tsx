@@ -846,7 +846,7 @@ export default function Home() {
           <div className="text-center">
             <div className="flex justify-center items-center gap-4 mb-4">
               <Image 
-                src="/logo_footer.png" 
+                src="/logo_footer1.png" 
                 alt="El arte de la palabra creativa" 
                 width={180}
                 height={180}
