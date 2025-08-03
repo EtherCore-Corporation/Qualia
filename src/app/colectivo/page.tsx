@@ -12,7 +12,7 @@ export default function Profesores() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Jesús Aladrén */}
           <Link 
-            href="/profesores/jesus-aladren" 
+            href="/colectivo/jesus-aladren" 
             className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 cursor-pointer"
           >
             <div className="relative z-10 text-center">
@@ -34,7 +34,7 @@ export default function Profesores() {
 
           {/* Begoña Frutos */}
           <Link 
-            href="/profesores/begona-frutos" 
+            href="/colectivo/begona-frutos" 
             className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 cursor-pointer"
           >
             <div className="relative z-10 text-center">
@@ -56,7 +56,7 @@ export default function Profesores() {
 
           {/* Prado Pinilla */}
           <Link 
-            href="/profesores/prado-pinilla" 
+            href="/colectivo/prado-pinilla" 
             className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 cursor-pointer"
           >
             <div className="relative z-10 text-center">
@@ -78,7 +78,7 @@ export default function Profesores() {
 
           {/* Yolanda Ulloa */}
           <Link 
-            href="/profesores/yolanda-ulloa" 
+            href="/colectivo/yolanda-ulloa" 
             className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 cursor-pointer"
           >
             <div className="relative z-10 text-center">
@@ -100,7 +100,7 @@ export default function Profesores() {
 
           {/* Jesús Barranco */}
           <Link 
-            href="/profesores/jesus-barranco" 
+            href="/colectivo/jesus-barranco" 
             className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 cursor-pointer"
           >
             <div className="relative z-10 text-center">

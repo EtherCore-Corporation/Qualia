@@ -337,21 +337,21 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Jesús Barranco */}
+                {/* El Primo Saint Tropez */}
                 <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20">
                   <div className="relative z-10 text-center">
                     <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-white/20 group-hover:ring-accent/30 transition-all duration-500">
                       <Image 
                         src="/primo.jpg" 
-                        alt="Jesús Barranco" 
+                        alt="El Primo Saint Tropez" 
                         width={128}
                         height={128}
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="text-xl font-bold mb-4 section-title">Jesús Barranco</h3>
+                    <h3 className="text-xl font-bold mb-4 section-title">El Primo Saint Tropez</h3>
                     <p className="text-sm text-muted leading-relaxed mb-6">
-                      Heterónimo con el que el actor Jesús Barranco investiga y crea en el ámbito de las Artes Vivas en diálogo con largos retiros en monasterios Carmelitas.
+                      Heterónimo con el que el actor El Primo Saint Tropez investiga y crea en el ámbito de las Artes Vivas en diálogo con largos retiros en monasterios Carmelitas.
                     </p>
                     <div className="flex flex-col gap-3">
                       <a href="#" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
@@ -459,7 +459,7 @@ export default function Home() {
                     <Image src="/5.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
                     <div>
                       <h4 className="text-2xl font-bold section-title">Andar, hablar, pensar</h4>
-                      <p className="text-sm text-accent mt-1">Por Begoña Frutos</p>
+                      <p className="text-sm text-accent mt-1">Por Yolanda Ulloa</p>
                     </div>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
@@ -476,7 +476,7 @@ export default function Home() {
                     <Image src="/6.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
                     <div>
                       <h4 className="text-2xl font-bold section-title">Los actos pequeños</h4>
-                      <p className="text-sm text-accent mt-1">Por Yolanda Ulloa</p>
+                      <p className="text-sm text-accent mt-1">Por El Primo Saint Tropez</p>
                     </div>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
