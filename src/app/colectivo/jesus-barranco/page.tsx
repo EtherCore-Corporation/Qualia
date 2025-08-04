@@ -51,9 +51,12 @@ export default function JesusBarranco() {
 
           {/* Propuesta de Investigación - Otoño 2025 */}
           <div className="mt-8 p-6 md:p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-            <h2 className="text-xl md:text-2xl font-bold mb-6 section-title">
+            <h2 className="text-xl md:text-2xl font-bold mb-6 section-title break-words">
               <span className="hidden sm:inline">Propuesta de investigación</span>
-              <span className="sm:hidden">Propuesta de investigación</span> - Otoño 2025
+              <span className="sm:hidden">Propuesta de investigación</span>
+              <br className="sm:hidden" />
+              <span className="sm:hidden">- Otoño 2025</span>
+              <span className="hidden sm:inline"> - Otoño 2025</span>
             </h2>
             <div className="space-y-6">
               <div>
@@ -102,7 +105,7 @@ export default function JesusBarranco() {
 
           {/* Propuestas de investigación del colectivo */}
           <div className="mt-8 p-6 md:p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-            <h2 className="text-xl md:text-2xl font-bold mb-6 section-title">
+            <h2 className="text-xl md:text-2xl font-bold mb-6 section-title break-words">
               <span className="hidden sm:inline">Propuestas de investigación</span>
               <span className="sm:hidden">Propuestas de investigación</span>
             </h2>
