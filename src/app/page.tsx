@@ -80,13 +80,13 @@ export default function Home() {
                 >
                   Qué es Qualia
                 </a>
-                <a 
-                  href="#colectivo-qualia" 
+                <Link 
+                  href="/colectivo" 
                   className="block py-2 hover:text-accent transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Colectivo Qualia
-                </a>
+                </Link>
                 <a 
                   href="#propuesta-investigacion" 
                   className="block py-2 hover:text-accent transition-colors"
