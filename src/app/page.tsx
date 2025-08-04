@@ -357,7 +357,7 @@ export default function Home() {
                       <a href="#" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
                         Ver formación académica →
                       </a>
-                      <a href="/colectivo/jesus-barranco" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
+                      <a href="/colectivo/el-primo-saint-tropez" className="inline-block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors">
                         Ver biografía completa
                       </a>
                     </div>

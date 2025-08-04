@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function JesusBarranco() {
+export default function ElPrimoSaintTropez() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
@@ -22,11 +22,11 @@ export default function JesusBarranco() {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              <a href="/#que-es-qualia" className="hover:text-accent transition-colors">Qué es Qualia</a>
-              <a href="/colectivo" className="hover:text-accent transition-colors">Colectivo Qualia</a>
-              <a href="/#propuesta-investigacion" className="hover:text-accent transition-colors">Propuesta de investigación</a>
-              <a href="/#inscripcion" className="hover:text-accent transition-colors">Inscripción</a>
-              <a href="/#conecta" className="hover:text-accent transition-colors">Conecta con Qualia</a>
+              <Link href="/#que-es-qualia" className="hover:text-accent transition-colors">Qué es Qualia</Link>
+              <Link href="/colectivo" className="hover:text-accent transition-colors">Colectivo Qualia</Link>
+              <Link href="/#propuesta-investigacion" className="hover:text-accent transition-colors">Propuesta de investigación</Link>
+              <Link href="/#inscripcion" className="hover:text-accent transition-colors">Inscripción</Link>
+              <Link href="/#conecta" className="hover:text-accent transition-colors">Conecta con Qualia</Link>
             </div>
           </div>
         </div>

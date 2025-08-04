@@ -22,11 +22,11 @@ export default function Profesores() {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              <a href="/#que-es-qualia" className="hover:text-accent transition-colors">Qué es Qualia</a>
-              <a href="/colectivo" className="hover:text-accent transition-colors">Colectivo Qualia</a>
-              <a href="/#propuesta-investigacion" className="hover:text-accent transition-colors">Propuesta de investigación</a>
-              <a href="/#inscripcion" className="hover:text-accent transition-colors">Inscripción</a>
-              <a href="/#conecta" className="hover:text-accent transition-colors">Conecta con Qualia</a>
+              <Link href="/#que-es-qualia" className="hover:text-accent transition-colors">Qué es Qualia</Link>
+              <Link href="/colectivo" className="hover:text-accent transition-colors">Colectivo Qualia</Link>
+              <Link href="/#propuesta-investigacion" className="hover:text-accent transition-colors">Propuesta de investigación</Link>
+              <Link href="/#inscripcion" className="hover:text-accent transition-colors">Inscripción</Link>
+              <Link href="/#conecta" className="hover:text-accent transition-colors">Conecta con Qualia</Link>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function Profesores() {
 
           {/* El Primo Saint Tropez */}
           <Link 
-            href="/colectivo/jesus-barranco" 
+            href="/colectivo/el-primo-saint-tropez" 
             className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10 p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 cursor-pointer"
           >
             <div className="relative z-10 text-center">
