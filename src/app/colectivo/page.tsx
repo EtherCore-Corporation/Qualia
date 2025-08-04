@@ -2,8 +2,11 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Profesores() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
@@ -28,7 +31,63 @@ export default function Profesores() {
               <Link href="/#inscripcion" className="hover:text-accent transition-colors">Inscripción</Link>
               <Link href="/#conecta" className="hover:text-accent transition-colors">Conecta con Qualia</Link>
             </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle mobile menu"
+            >
+              <div className="w-6 h-6 flex flex-col justify-center space-y-1">
+                <span className={`block w-full h-0.5 bg-foreground transition-all ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+                <span className={`block w-full h-0.5 bg-foreground transition-all ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
+                <span className={`block w-full h-0.5 bg-foreground transition-all ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+              </div>
+            </button>
           </div>
+
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 border-t border-border">
+              <div className="flex flex-col space-y-2 pt-4">
+                <Link 
+                  href="/#que-es-qualia" 
+                  className="block py-2 hover:text-accent transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Qué es Qualia
+                </Link>
+                <Link 
+                  href="/colectivo" 
+                  className="block py-2 hover:text-accent transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Colectivo Qualia
+                </Link>
+                <Link 
+                  href="/#propuesta-investigacion" 
+                  className="block py-2 hover:text-accent transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Propuesta de investigación
+                </Link>
+                <Link 
+                  href="/#inscripcion" 
+                  className="block py-2 hover:text-accent transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Inscripción
+                </Link>
+                <Link 
+                  href="/#conecta" 
+                  className="block py-2 hover:text-accent transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Conecta con Qualia
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
