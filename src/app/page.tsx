@@ -372,7 +372,10 @@ export default function Home() {
       {/* Workshop Section */}
       <section id="propuesta-investigacion" className="py-16 bg-background/85">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-8 text-center section-title">Propuesta de investigación - Otoño 2025</h2>
+                      <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center section-title">
+              <span className="hidden sm:inline">Propuesta de investigación</span>
+              <span className="sm:hidden">Propuesta de investigación</span> - Otoño 2025
+            </h2>
           <div className="max-w-4xl mx-auto mb-12 p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
             <h3 className="text-2xl font-bold mb-6 text-center section-title">&ldquo;Oye cómo va&rdquo;</h3>
             <p className="text-lg leading-relaxed text-center">
@@ -416,17 +419,20 @@ export default function Home() {
 
             {/* Propuestas de Investigación */}
             <div className="max-w-6xl mx-auto mt-16">
-              <h3 className="text-3xl font-bold mb-12 text-center section-title">Propuesta de investigación</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center section-title">
+              <span className="hidden sm:inline">Propuesta de investigación</span>
+              <span className="sm:hidden">Propuesta de investigación</span>
+            </h3>
               
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Cuerpo */}
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
                     <Image src="/3.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                    <div>
-                      <h4 className="text-2xl font-bold section-title">Cuerpo para la voz - el cuerpo de la voz</h4>
-                      <p className="text-sm text-accent mt-1">Por Prado Pinilla</p>
-                    </div>
+                                          <div>
+                        <h4 className="text-lg md:text-2xl font-bold section-title">Cuerpo para la voz - el cuerpo de la voz</h4>
+                        <p className="text-sm text-accent mt-1">Por Prado Pinilla</p>
+                      </div>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
                     ¿Qué sucede cuando la vibración es capaz de viajar libremente y multiplicarse en el cuerpo a través de canales que, previamente, se han dispuesto para ello? ¿Puede ese hecho afectar a las funciones interoceptivas y propioceptivas del individuo?
@@ -443,10 +449,10 @@ export default function Home() {
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
                     <Image src="/4.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                    <div>
-                      <h4 className="text-2xl font-bold section-title">Ritmo - Centro del corazón</h4>
-                      <p className="text-sm text-accent mt-1">Por Jesús Aladrén</p>
-                    </div>
+                                          <div>
+                        <h4 className="text-lg md:text-2xl font-bold section-title">Ritmo - Centro del corazón</h4>
+                        <p className="text-sm text-accent mt-1">Por Jesús Aladrén</p>
+                      </div>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
                     Investigación del ritmo desde el centro del corazón. El corazón como único centro de nuestro ser que resuena. El movimiento debe estar en armonía con el ritmo del corazón. Nuestro trabajo consistirá en establecer el cuerpo del ritmo y profundizar en su movimiento.
@@ -457,10 +463,10 @@ export default function Home() {
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
                     <Image src="/5.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                    <div>
-                      <h4 className="text-2xl font-bold section-title">Andar, hablar, pensar</h4>
-                      <p className="text-sm text-accent mt-1">Por Yolanda Ulloa</p>
-                    </div>
+                                          <div>
+                        <h4 className="text-lg md:text-2xl font-bold section-title">Andar, hablar, pensar</h4>
+                        <p className="text-sm text-accent mt-1">Por Yolanda Ulloa</p>
+                      </div>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
                     Planteo el estudio consciente de este recorrido en concreto como base o fundamento para el desarrollo de todo proceso artístico y creativo. Y planteo así mismo un ejercicio de investigación sobre la correlación de estas tres facultades humanas y sobre el asombroso sentido del lugar intermedio que ocupa el habla.
@@ -474,10 +480,10 @@ export default function Home() {
                 <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
                   <div className="flex items-center mb-6">
                     <Image src="/6.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                    <div>
-                      <h4 className="text-2xl font-bold section-title">Los actos pequeños</h4>
-                      <p className="text-sm text-accent mt-1">Por El Primo Saint Tropez</p>
-                    </div>
+                                          <div>
+                        <h4 className="text-lg md:text-2xl font-bold section-title">Los actos pequeños</h4>
+                        <p className="text-sm text-accent mt-1">Por El Primo Saint Tropez</p>
+                      </div>
                   </div>
                   <p className="text-sm leading-relaxed mb-4">
                     Después del silencio, del segundo silencio, surge de nuevo la palabra. El anhelo sería entrenar desde el misterio y descubrir lo que surge cuando se quiere decir lo inefable.

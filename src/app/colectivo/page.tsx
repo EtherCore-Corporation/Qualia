@@ -113,7 +113,7 @@ export default function Profesores() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <h3 className="text-xl font-bold mb-4 section-title">El Primo Saint Tropez</h3>
+              <h3 className="text-xl font-bold mb-4 section-title">Jesús Barranco</h3>
               <p className="text-sm text-muted leading-relaxed">
                 Actor e investigador en Artes Vivas, miembro de diversos colectivos artísticos.
               </p>
