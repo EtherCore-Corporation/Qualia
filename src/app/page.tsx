@@ -634,7 +634,7 @@ export default function Home() {
                     <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
                       <span className="text-accent font-bold">1</span>
                     </div>
-                    <p className="text-sm">Realiza el pago de <strong>120€</strong> para reservar tu plaza <strong>antes del 15 de Agosto</strong></p>
+                    <p className="text-sm">Realiza el pago de <strong>120€</strong> para reservar tu plaza</p>
                   </div>
                   <div className="text-center">
                     <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
