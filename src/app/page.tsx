@@ -951,7 +951,7 @@ export default function Home() {
                 <p className="text-sm text-muted">Colaboradora</p>
               </div>
               
-              {/* Diseño web */}}
+              {/* Diseño web */}
               <div className="text-center p-6 bg-secondary/90 rounded-lg">
                 <h3 className="text-lg font-bold mb-2 font-serif">Diseño Web</h3>
                 <p className="text-sm text-muted">Ibai San Millan Gomez [EtherCore] <a href="https://ether-core.com" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">ether-core.com</a></p>
@@ -990,13 +990,13 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <a
+            <Link
               href="/#conecta"
               className="inline-block px-8 py-3 rounded-full font-semibold text-background transition-all hover:opacity-90"
               style={{backgroundColor: '#8b4513'}}
             >
               Contactar con Qualia
-            </a>
+            </Link>
           </div>
         </div>
       </section>
