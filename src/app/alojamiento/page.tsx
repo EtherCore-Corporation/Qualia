@@ -393,7 +393,7 @@ export default function AlojamientoPage() {
                     <span className="text-xl flex-shrink-0">📅</span>
                     <div>
                       <p className="font-semibold">Reserva con antelación</p>
-                      <p className="text-sm text-muted">Especialmente durante septiembre</p>
+                      <p className="text-sm text-muted">Especialmente durante el verano</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 p-3 bg-white/10 rounded-lg">
@@ -412,6 +412,18 @@ export default function AlojamientoPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="max-w-6xl mx-auto mt-12">
+            <div className="relative overflow-hidden rounded-3xl">
+              <Image
+                src="/piscina.jpg"
+                alt="Piscina municipal de La Algueña"
+                width={1200}
+                height={720}
+                className="w-full h-80 object-cover rounded-3xl"
+              />
             </div>
           </div>
         </div>

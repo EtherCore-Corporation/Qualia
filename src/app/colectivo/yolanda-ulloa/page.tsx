@@ -26,7 +26,7 @@ export default function YolandaUlloa() {
             <h1 className="text-4xl font-bold mb-4 section-title">Yolanda Ulloa</h1>
             <p className="text-lg font-semibold text-accent mb-1">Fundadora de Espacio Qualia</p>
             <p className="text-xl text-accent mb-1">Actriz, terapeuta biográfica y profesional del Arte de la Palabra</p>
-            <p className="text-sm font-semibold text-accent mb-2">Cofundadora</p>
+            <p className="text-sm font-semibold text-accent mb-2">Fundadora de Espacio Qualia</p>
             <a 
               href="https://www.yolandaulloa.es" 
               target="_blank" 

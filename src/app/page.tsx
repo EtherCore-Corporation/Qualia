@@ -168,7 +168,7 @@ export default function Home() {
 
             {/* Convocatoria badge */}
             <div className="mb-6 inline-flex flex-wrap items-center justify-center gap-2 rounded-2xl border border-accent/40 bg-white/30 backdrop-blur-sm px-5 py-3">
-              <span className="rounded-full bg-green-600 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">Convocatoria abierta</span>
+              <span className="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide text-white" style={{backgroundColor: '#8b4513'}}>Convocatoria abierta</span>
               <span className="font-semibold text-foreground text-sm md:text-base">Los Gestos del Alma · 20–24 Julio 2026</span>
               <span className="text-sm text-muted">La Algueña, Alicante</span>
             </div>
@@ -224,7 +224,7 @@ export default function Home() {
               <span className="opacity-70">·</span>
               <span>La Algueña, Alicante</span>
               <span className="opacity-70">·</span>
-              <span className="font-semibold">Solo 21 plazas</span>
+              <span className="font-semibold">De 9 a 21 plazas</span>
             </div>
             <a
               href="#inscripcion"
@@ -259,11 +259,11 @@ export default function Home() {
             </div>
 
             {/* El Colectivo */}
-            <div className="mb-12">
+            <div id="colectivo" className="mb-12">
               <h3 className="text-3xl font-bold mb-8 text-center section-title">Colectivo Qualia</h3>
               <div className="mb-12 p-8 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/15 rounded-3xl">
                 <p className="text-lg leading-relaxed animate-slide-in mb-6">
-                  El Colectivo <span className="qualia-text">Qualia</span> se conforma como un <strong>proyecto de creación y experimentación</strong> con la 
+                  El Colectivo <span className="qualia-text">Qualia</span> se conforma inicialmente como un <strong>proyecto de creación y experimentación</strong> con la 
                   Voz y la Palabra desde cinco trayectorias y estéticas diferentes -con recorridos profesionales 
                   y vitales vinculados al arte de la escena- que desean consolidar un <strong>entrenamiento vocal 
                   para las Artes Vivas</strong>.
@@ -291,7 +291,7 @@ export default function Home() {
                     </div>
                     <h3 className="text-xl font-bold mb-4 section-title">Jesús Aladrén</h3>
                     <p className="text-sm text-muted leading-relaxed mb-6">
-                      Autor de &ldquo;El ritmo de la voz, la voz en movimiento&rdquo; e investigador de las dimensiones rítmicas y temporales en la expresión artística.
+                      Investigador de las dimensiones rítmicas y temporales en la expresión artística.
                     </p>
                     <div className="flex flex-col gap-3">
                       <a href="https://www.example.com/jesus-aladren" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
@@ -328,6 +328,7 @@ export default function Home() {
                         Ver biografía completa
                       </a>
                     </div>
+                    <p className="text-sm font-semibold text-accent mt-2">Cofundador</p>
                   </div>
                 </div>
 
@@ -355,6 +356,7 @@ export default function Home() {
                         Ver biografía completa
                       </a>
                     </div>
+                    <p className="text-sm font-semibold text-accent mt-2">Cofundador</p>
                   </div>
                 </div>
 
@@ -382,6 +384,7 @@ export default function Home() {
                         Ver biografía completa
                       </a>
                     </div>
+                    <p className="text-sm font-semibold text-accent mt-2">Fundadora de Espacio Qualia</p>
                   </div>
                 </div>
 
@@ -409,6 +412,7 @@ export default function Home() {
                         Ver biografía completa
                       </a>
                     </div>
+                    <p className="text-sm font-semibold text-accent mt-2">Cofundador</p>
                   </div>
                 </div>
               </div>
@@ -420,129 +424,50 @@ export default function Home() {
       {/* Workshop Section */}
       <section id="propuesta-investigacion" className="py-16 bg-background/85">
         <div className="container mx-auto px-4">
-                      <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center section-title break-words">
-              <span className="hidden sm:inline">Propuesta de investigación</span>
-              <span className="sm:hidden">Propuesta de investigación</span>
-              <br className="sm:hidden" />
-                        <span className="sm:hidden">- Verano 2026</span>
-                        <span className="hidden sm:inline"> - Verano 2026</span>
-            </h2>
-          <div className="max-w-4xl mx-auto mb-12 p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-                      <h3 className="text-2xl font-bold mb-6 text-center section-title">&ldquo;El ritmo de la voz, la voz en movimiento&rdquo;</h3>
-            <p className="text-lg leading-relaxed text-center">
-                        &ldquo;El ritmo de la voz, la voz en movimiento&rdquo; es la biografía y línea de investigación de Jesús Aladrén en la convocatoria 2026 del Colectivo <span className="qualia-text">Qualia</span>.
-            </p>
-            <p className="text-lg leading-relaxed text-center mt-4">
-              Una propuesta abierta, dirigida principalmente a <strong>creadores y creadoras</strong> que deseen preguntarse su VOZ ó la VOZ en el campo de las Artes Vivas: actores, performers, directores, dramaturgos, escritores. Y, por supuesto, también a todo aquel interesado en esta aventura.
-            </p>
-            <p className="text-sm text-accent text-center mt-4">Por Jesús Aladrén</p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-secondary/90 rounded-lg p-8 mb-8">
-              <h3 className="text-2xl font-bold mb-6 section-title">Taller de artes vivas</h3>
-              
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="text-xl font-semibold mb-4 section-title">Fechas</h4>
-                  <p className="mb-2">Recepción e inicio: Lunes 20 de julio de 2026 (17:00h)</p>
-                  <p className="mb-4">Recapitulación y cierre: Viernes 24 de julio de 2026 (13:30h)</p>
-                  
-                  <h4 className="text-xl font-semibold mb-4 section-title">Participación</h4>
-                  <p className="mb-2">Mínimo: 12 personas</p>
-                  <p className="mb-4">Máximo: 21 personas</p>
-                </div>
-                
-                <div>
-                  <h4 className="text-xl font-semibold mb-4 section-title">Horarios diarios</h4>
-                  <div className="space-y-2">
-                    <p>9:30 – Cuerpo</p>
-                    <p>10:30 – Ritmo</p>
-                    <p>11:30 - 12:00 – Descanso</p>
-                    <p>12:00 – Andar. Hablar. Pensar</p>
-                    <p>13:00 - 17:00 – Comida / Tiempo libre</p>
-                    <p>17:00 – Las pequeñas cosas</p>
-                    <p>18:00 – Silencio</p>
-                    <p>19:00 – Reflexión conjunta</p>
-                  </div>
-                </div>
-              </div>
+          <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center section-title break-words">
+            <span className="hidden sm:inline">Propuesta de Investigación Verano 2026</span>
+            <span className="sm:hidden">Propuesta de Investigación Verano 2026</span>
+          </h2>
+
+          <div className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-3">
+            <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+              <h3 className="text-2xl font-bold mb-4 section-title">Los gestos del Alma</h3>
+              <p className="text-sm text-accent mt-1 mb-4 font-semibold">de Yolanda Ulloa</p>
+              <p className="text-sm leading-relaxed">
+                Indagar en la conformación de nuestros movimientos y disposiciones internas en relación con uno mismo, con el otro y con lo otro. Poder observar cómo se yergue en el alma una respuesta al mundo, cómo entra en conversación con cuanto le rodea por fuera, con cuanto emerge en su interior. Reconocer y contemplar la naturaleza de la gesticulación del alma y de su voz en nosotros.
+              </p>
             </div>
 
-            {/* Propuestas de Investigación */}
-            <div className="max-w-6xl mx-auto mt-16">
-              <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center section-title break-words">
-              <span className="hidden sm:inline">Propuesta de investigación</span>
-              <span className="sm:hidden">Propuesta de investigación</span>
-            </h3>
-              
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Cuerpo */}
-                <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-                  <div className="flex items-center mb-6">
-                    <Image src="/3.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                                          <div>
-                        <h4 className="text-lg md:text-2xl font-bold section-title">Cuerpo para la voz - el cuerpo de la voz</h4>
-                        <p className="text-sm text-accent mt-1">Por Prado Pinilla</p>
-                      </div>
-                  </div>
-                  <p className="text-sm leading-relaxed mb-4">
-                    ¿Qué sucede cuando la vibración es capaz de viajar libremente y multiplicarse en el cuerpo a través de canales que, previamente, se han dispuesto para ello? ¿Puede ese hecho afectar a las funciones interoceptivas y propioceptivas del individuo?
-                  </p>
-                  <p className="text-sm leading-relaxed mb-4">
-                    ¿Es posible que la voz se impregne de esas nuevas sensaciones y ser vehículo portador de las experiencias más profundas de nuestros órganos, vísceras y tejidos? ¿Cómo es fonar desde esa consciencia?
-                  </p>
-                  <p className="text-sm italic">
-                    &ldquo;Las palabras sólo sellan lo que el cuerpo ya sabe&rdquo; - Pablo d&rsquo;Ors
-                  </p>
-                </div>
+            <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+              <h3 className="text-2xl font-bold mb-4 section-title">Los gestos del Cuerpo</h3>
+              <p className="text-sm text-accent mt-1 mb-4 font-semibold">de Prado Pinilla</p>
+              <p className="text-sm leading-relaxed">
+                Al modificar las estructuras de soporte-apoyo del cuerpo se transmite nueva información al resto de estructuras psicofísicas, dinamizando la aparición y el descubrimiento de gestos internos diversos capaces de convocar otras voces…
+              </p>
+            </div>
 
-                {/* Ritmo */}
-                <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-                  <div className="flex items-center mb-6">
-                    <Image src="/4.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                                          <div>
-                        <h4 className="text-lg md:text-2xl font-bold section-title">Ritmo - Centro del corazón</h4>
-                        <p className="text-sm text-accent mt-1">Por Jesús Aladrén</p>
-                      </div>
-                  </div>
-                  <p className="text-sm leading-relaxed mb-4">
-                    Investigación del ritmo desde el centro del corazón. El corazón como único centro de nuestro ser que resuena. El movimiento debe estar en armonía con el ritmo del corazón. Nuestro trabajo consistirá en establecer el cuerpo del ritmo y profundizar en su movimiento.
-                  </p>
+            <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+              <h3 className="text-2xl font-bold mb-4 section-title">El ritmo de la voz, la voz en movimiento</h3>
+              <p className="text-sm text-accent mt-1 mb-4 font-semibold">de Jesús Aladrén</p>
+              <div className="space-y-4 text-sm leading-relaxed">
+                <div>
+                  <p className="font-semibold text-accent mb-1">El cuerpo y sus equilibrios</p>
+                  <p>Centro energético</p>
+                  <p>El eje corporal</p>
+                  <p>Lateralidades</p>
                 </div>
-
-                {/* Andar, Hablar, Pensar */}
-                <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-                  <div className="flex items-center mb-6">
-                    <Image src="/5.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                                          <div>
-                        <h4 className="text-lg md:text-2xl font-bold section-title">Andar, hablar, pensar</h4>
-                        <p className="text-sm text-accent mt-1">Por Yolanda Ulloa</p>
-                      </div>
-                  </div>
-                  <p className="text-sm leading-relaxed mb-4">
-                    Planteo el estudio consciente de este recorrido en concreto como base o fundamento para el desarrollo de todo proceso artístico y creativo. Y planteo así mismo un ejercicio de investigación sobre la correlación de estas tres facultades humanas y sobre el asombroso sentido del lugar intermedio que ocupa el habla.
-                  </p>
-                  <p className="text-xs italic">
-                    &ldquo;La energía creativa del verbo es un poder formativo que construye incluso nuestros cuerpos físicos&rdquo; - Rudolf Steiner
-                  </p>
+                <div>
+                  <p className="font-semibold text-accent mb-1">Elementos de la voz interaccionados</p>
+                  <p>Aparato respiratorio</p>
+                  <p>Aparato fonador</p>
+                  <p>Aparato resonador</p>
                 </div>
-
-                {/* Los actos pequeños */}
-                <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-                  <div className="flex items-center mb-6">
-                    <Image src="/6.png" alt="Leaf icon" width={48} height={48} className="w-12 h-12 mr-4" />
-                                          <div>
-                        <h4 className="text-lg md:text-2xl font-bold section-title">Los actos pequeños</h4>
-                        <p className="text-sm text-accent mt-1">Por El Primo Saint Tropez</p>
-                      </div>
-                  </div>
-                  <p className="text-sm leading-relaxed mb-4">
-                    Después del silencio, del segundo silencio, surge de nuevo la palabra. El anhelo sería entrenar desde el misterio y descubrir lo que surge cuando se quiere decir lo inefable.
-                  </p>
-                  <p className="text-sm leading-relaxed">
-                    La idea es descubrir cómo se habla desde el instante que deja de ser inefable para, sin la conciencia del instrumento, hallar actos del lenguaje a tiempo real.
-                  </p>
+                <div>
+                  <p className="font-semibold text-accent mb-1">Propiedades del sonido</p>
+                  <p>Tono</p>
+                  <p>Timbre</p>
+                  <p>Cantidad</p>
+                  <p>Intensidad</p>
                 </div>
               </div>
             </div>
@@ -586,16 +511,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* La Algueña */}
-            <div className="relative overflow-hidden rounded-3xl">
-              <Image
-                src="/piscina.jpg"
-                alt="Piscina de verano de La Algueña"
-                width={800}
-                height={450}
-                className="w-full h-72 object-cover rounded-3xl"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -610,11 +525,8 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-5xl font-bold mb-6 section-title">Inscripción</h2>
-            <p className="text-xl text-muted mb-6 max-w-2xl mx-auto">
-              Quedan pocas semanas. Si sientes que esta propuesta te llama, este es el momento de dar el paso.
-            </p>
             <div className="inline-flex flex-wrap items-center justify-center gap-3 rounded-2xl border border-accent/30 bg-white/40 px-4 py-3 backdrop-blur-sm">
-              <span className="rounded-full bg-green-600 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">Convocatoria 2026 abierta</span>
+              <span className="rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white" style={{backgroundColor: '#8b4513'}}>Convocatoria 2026 abierta</span>
               <span className="text-sm text-muted">Plazas limitadas · Confirmación por orden de reserva</span>
             </div>
             <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
@@ -672,7 +584,7 @@ export default function Home() {
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white/10 rounded-lg">
                     <span className="font-semibold">Plazas:</span>
-                    <span className="text-accent">12-21 personas</span>
+                    <span className="text-accent">de 9 a 21 personas</span>
                   </div>
                 </div>
               </div>
@@ -820,7 +732,7 @@ export default function Home() {
       <section className="py-16 bg-secondary/60">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-4 text-center font-serif">Voces de Qualia</h2>
-          <p className="text-center text-muted text-lg mb-12">Testimonios de participantes — La Algueña, septiembre 2025</p>
+          <p className="text-center text-muted text-lg mb-12">Testimonios de participantes — La Algueña, verano 2025</p>
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
 
             <div className="p-8 bg-white/60 border border-border rounded-3xl">

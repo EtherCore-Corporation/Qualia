@@ -25,7 +25,7 @@ export default function BegonaFrutos() {
             </div>
             <h1 className="text-4xl font-bold mb-4 section-title">Begoña Frutos Fuentes</h1>
             <p className="text-xl text-accent mb-1">Docente en el Departamento de Música, Voz y Lenguaje - RESAD</p>
-            <p className="text-sm font-semibold text-accent mb-2">Cofundadora</p>
+            <p className="text-sm font-semibold text-accent mb-2">Cofundador</p>
             <div className="flex justify-center gap-4">
               <a 
                 href="https://www.resad.es/voz-lenguaje.html" 
