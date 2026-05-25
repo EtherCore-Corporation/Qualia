@@ -5,6 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function AlojamientoPage() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
@@ -38,6 +40,9 @@ export default function AlojamientoPage() {
           <p className="text-xl text-muted max-w-3xl mx-auto">
             Opciones completas para tu estancia durante el taller Qualia en La Algueña
           </p>
+          <div className="inline-flex items-center gap-2 mt-5 rounded-full bg-green-600 px-4 py-1.5 text-sm font-semibold text-white">
+            Convocatoria 2026 abierta
+          </div>
           <div className="flex items-center justify-center gap-2 text-lg mt-4">
             <span className="text-2xl">📍</span>
             <span className="font-semibold">La Algueña, Alicante</span>
@@ -198,7 +203,7 @@ export default function AlojamientoPage() {
                     </div>
                     <div className="flex items-center gap-3 p-3 bg-white/10 rounded-lg">
                       <span className="text-xl">🚗</span>
-                      <span className="text-sm">12 minutos en coche hasta El MUCA</span>
+                      <span className="text-sm">12 minutos en coche desde La Algueña</span>
                     </div>
                   </div>
 
@@ -430,7 +435,7 @@ export default function AlojamientoPage() {
               El arte de la palabra creativa, Escuela de Voz.
             </p>
             <p className="text-background/60 mt-4">
-              © 2025 Qualia. Todos los derechos reservados.
+              © {currentYear} Qualia. Todos los derechos reservados.
             </p>
             <Link 
               href="/" 

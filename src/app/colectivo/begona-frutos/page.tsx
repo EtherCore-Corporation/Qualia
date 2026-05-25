@@ -24,7 +24,8 @@ export default function BegonaFrutos() {
               />
             </div>
             <h1 className="text-4xl font-bold mb-4 section-title">Begoña Frutos Fuentes</h1>
-            <p className="text-xl text-accent mb-2">Docente en el Departamento de Música, Voz y Lenguaje - RESAD</p>
+            <p className="text-xl text-accent mb-1">Docente en el Departamento de Música, Voz y Lenguaje - RESAD</p>
+            <p className="text-sm font-semibold text-accent mb-2">Cofundadora</p>
             <div className="flex justify-center gap-4">
               <a 
                 href="https://www.resad.es/voz-lenguaje.html" 
@@ -42,6 +43,19 @@ export default function BegonaFrutos() {
               >
                 ECE Actores →
               </a>
+            </div>
+          </div>
+
+          {/* Biografía Íntima */}
+          <div className="mt-8 mb-8 p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+            <h2 className="text-2xl font-bold mb-6 section-title">Biografía Íntima</h2>
+            <div className="space-y-4 text-lg leading-relaxed">
+              <p>
+                Escuchar, mirar y sentir son tres cosas que a lo largo de mi vida no he dejado de hacer. Siempre quise relacionar mi vida con estas palabras y adentrarme en sus profundidades. Los últimos 30 años han sido apasionantes de aventuras, y aprendizajes relacionados con el arte y en el camino he encontrado a personas que me han ayudado a construirme como persona al tiempo que adquiría conocimientos para formar a otras personas a través de la voz escénica.
+              </p>
+              <p>
+                Siempre me ha provocado la creatividad de lo invisible y todo lo que implique ese desarrollo a través de la voz, la palabra o el silencio. Tras mis vivencias como docente, actriz e investigadora me alegra formar parte de este grupo de trabajo donde a través de la experiencia, el hecho artístico, la espiritualidad y el compromiso vocal en todos sus márgenes, puedo volcar aquellos anhelos que sin pertenecer al mundo de lo visible, lo rigen en todos mis ámbitos.
+              </p>
             </div>
           </div>
 
@@ -134,6 +148,21 @@ export default function BegonaFrutos() {
                   <li>La Boria Teatro</li>
                 </ul>
               </div>
+            </div>
+          </div>
+
+          {/* Jornadas RESAD */}
+          <div className="mt-8 p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+            <h2 className="text-2xl font-bold mb-6 section-title">VI Jornadas del Día Internacional de la Voz — RESAD</h2>
+            <p className="text-muted mb-6">29 de abril de 2026 · Sala Polivalente de la RESAD</p>
+            <div className="rounded-2xl overflow-hidden">
+              <Image
+                src="/jornadas-resad.jpg"
+                alt="VI Jornadas del Día Internacional de la Voz — RESAD 2026"
+                width={800}
+                height={900}
+                className="w-full object-contain"
+              />
             </div>
           </div>
         </div>

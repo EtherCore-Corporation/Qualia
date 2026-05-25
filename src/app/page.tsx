@@ -12,6 +12,7 @@ import { ContactFormData } from '../types/contact';
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const currentYear = new Date().getFullYear();
 
   const handleContactSubmit = async (formData: ContactFormData) => {
     try {
@@ -137,33 +138,57 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-4 text-center relative h-full flex flex-col justify-center items-center" style={{zIndex: 5}}>
-          {/* Título principal con margen superior */}
-          <div className="mb-8 mt-16 md:mt-20">
-            <div className="flex items-center justify-center mb-4">
-              <Image 
-                src="/Logo original.png" 
-                alt="Qualia Logo" 
-                width={400}
-                height={200}
-                priority
-                className="h-32 md:h-40 lg:h-48 w-auto"
-              />
-            </div>
+          <div className="mb-6 mt-16 md:mt-20">
+            <Image 
+              src="/Logo original.png" 
+              alt="Qualia Logo" 
+              width={400}
+              height={200}
+              priority
+              className="h-32 md:h-44 lg:h-52 w-auto drop-shadow-lg"
+            />
           </div>
-          
-          {/* Tarjeta transparente para el contenido */}
-          <div className="max-w-4xl mx-auto p-6 md:p-8 bg-white/20 backdrop-blur-sm">
-            <p className="text-xl md:text-2xl mb-8 autumn-text">
-              Colectivo de investigación y creación en torno a la voz, el silencio, el cuerpo y la palabra en las <span className="qualia-text">Artes Vivas</span>
+
+          <div className="max-w-3xl mx-auto">
+            {/* Tagline */}
+            <p className="text-lg md:text-2xl mb-3 autumn-text tracking-widest uppercase font-light">
+              Voz · Silencio · Cuerpo · Palabra
             </p>
-            <blockquote className="text-lg md:text-xl mb-8 italic text-muted" style={{textShadow: '0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(255, 255, 255, 0.8)'}}>
-              &ldquo;Parece que la experiencia íntima de las cosas concretas requiere una especie de coraje&rdquo;
-              <footer className="text-sm mt-2 text-accent" style={{textShadow: '0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(255, 255, 255, 0.8)'}}>— Aristóteles</footer>
-            </blockquote>
-            
-            <p className="text-lg mb-8 max-w-3xl mx-auto autumn-text">
-              Qualia es un espacio de encuentro donde la investigación artística se convierte en experiencia viva. Exploramos las dimensiones más sutiles de la expresión humana, donde el silencio habla y el cuerpo piensa.
+            <p className="text-base md:text-lg text-muted mb-8">
+              Colectivo de investigación y creación en las <span className="qualia-text font-semibold">Artes Vivas</span>
             </p>
+
+            {/* Quote */}
+            <div className="mb-10 max-w-xl mx-auto">
+              <blockquote className="text-lg md:text-xl italic text-muted" style={{textShadow: '0 2px 8px rgba(0,0,0,0.25)'}}>
+                &ldquo;Parece que la experiencia íntima de las cosas concretas requiere una especie de coraje&rdquo;
+                <footer className="text-sm mt-2 not-italic font-semibold text-accent">— Aristóteles</footer>
+              </blockquote>
+            </div>
+
+            {/* Convocatoria badge */}
+            <div className="mb-6 inline-flex flex-wrap items-center justify-center gap-2 rounded-2xl border border-accent/40 bg-white/30 backdrop-blur-sm px-5 py-3">
+              <span className="rounded-full bg-green-600 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">Convocatoria abierta</span>
+              <span className="font-semibold text-foreground text-sm md:text-base">Los Gestos del Alma · 20–24 Julio 2026</span>
+              <span className="text-sm text-muted">La Algueña, Alicante</span>
+            </div>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="#inscripcion"
+                className="inline-block px-8 py-3 rounded-full font-bold text-background text-lg transition-all hover:opacity-90 hover:scale-105 shadow-lg"
+                style={{backgroundColor: '#8b4513'}}
+              >
+                Reserva tu plaza →
+              </a>
+              <a
+                href="#propuesta-investigacion"
+                className="inline-block px-6 py-3 rounded-full font-semibold border-2 border-accent/50 text-accent hover:bg-accent/10 transition-all text-base"
+              >
+                Conoce la propuesta ↓
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -187,6 +212,29 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Urgency Banner */}
+      <div className="bg-accent text-background py-4">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <span className="font-bold text-lg">Los Gestos del Alma</span>
+              <span className="opacity-70">·</span>
+              <span>20–24 Julio 2026</span>
+              <span className="opacity-70">·</span>
+              <span>La Algueña, Alicante</span>
+              <span className="opacity-70">·</span>
+              <span className="font-semibold">Solo 21 plazas</span>
+            </div>
+            <a
+              href="#inscripcion"
+              className="flex-shrink-0 bg-background text-accent font-bold px-5 py-2 rounded-full hover:bg-background/90 transition-colors text-sm"
+            >
+              Inscríbete ahora
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* About QUALIA */}
       <section id="que-es-qualia" className="py-16 bg-secondary/85">
@@ -243,7 +291,7 @@ export default function Home() {
                     </div>
                     <h3 className="text-xl font-bold mb-4 section-title">Jesús Aladrén</h3>
                     <p className="text-sm text-muted leading-relaxed mb-6">
-                      Investigador de las dimensiones rítmicas y temporales en la expresión artística.
+                      Autor de &ldquo;El ritmo de la voz, la voz en movimiento&rdquo; e investigador de las dimensiones rítmicas y temporales en la expresión artística.
                     </p>
                     <div className="flex flex-col gap-3">
                       <a href="https://www.example.com/jesus-aladren" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">
@@ -376,17 +424,18 @@ export default function Home() {
               <span className="hidden sm:inline">Propuesta de investigación</span>
               <span className="sm:hidden">Propuesta de investigación</span>
               <br className="sm:hidden" />
-              <span className="sm:hidden">- Otoño 2025</span>
-              <span className="hidden sm:inline"> - Otoño 2025</span>
+                        <span className="sm:hidden">- Verano 2026</span>
+                        <span className="hidden sm:inline"> - Verano 2026</span>
             </h2>
           <div className="max-w-4xl mx-auto mb-12 p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-            <h3 className="text-2xl font-bold mb-6 text-center section-title">&ldquo;Oye cómo va&rdquo;</h3>
+                      <h3 className="text-2xl font-bold mb-6 text-center section-title">&ldquo;El ritmo de la voz, la voz en movimiento&rdquo;</h3>
             <p className="text-lg leading-relaxed text-center">
-              &ldquo;Oye cómo va&rdquo; es la primera propuesta que surge desde el Colectivo <span className="qualia-text">Qualia</span> atendiendo a los cinco modos de pensarla en sus prácticas artísticas y pedagógicas.
+                        &ldquo;El ritmo de la voz, la voz en movimiento&rdquo; es la biografía y línea de investigación de Jesús Aladrén en la convocatoria 2026 del Colectivo <span className="qualia-text">Qualia</span>.
             </p>
             <p className="text-lg leading-relaxed text-center mt-4">
               Una propuesta abierta, dirigida principalmente a <strong>creadores y creadoras</strong> que deseen preguntarse su VOZ ó la VOZ en el campo de las Artes Vivas: actores, performers, directores, dramaturgos, escritores. Y, por supuesto, también a todo aquel interesado en esta aventura.
             </p>
+            <p className="text-sm text-accent text-center mt-4">Por Jesús Aladrén</p>
           </div>
           
           <div className="max-w-4xl mx-auto">
@@ -396,8 +445,8 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h4 className="text-xl font-semibold mb-4 section-title">Fechas</h4>
-                  <p className="mb-2">Recepción e inicio: Lunes 1 de septiembre (17:00h)</p>
-                  <p className="mb-4">Recapitulación y cierre: Viernes 5 de septiembre (13:00h)</p>
+                  <p className="mb-2">Recepción e inicio: Lunes 20 de julio de 2026 (17:00h)</p>
+                  <p className="mb-4">Recapitulación y cierre: Viernes 24 de julio de 2026 (13:30h)</p>
                   
                   <h4 className="text-xl font-semibold mb-4 section-title">Participación</h4>
                   <p className="mb-2">Mínimo: 12 personas</p>
@@ -507,65 +556,45 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-12 text-center section-title">Dónde</h2>
           
           <div className="max-w-6xl mx-auto">
-            {/* El MUCA */}
+            {/* La Algueña */}
             <div className="mb-16 relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 p-8">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent"></div>
               <div className="relative z-10">
                 <div className="text-center mb-8">
-                  <h3 className="text-3xl font-bold mb-4 section-title">El MUCA</h3>
-                  <p className="text-xl text-accent mb-4">Casa de la Música, la Cultura y las Artes</p>
+                  <h3 className="text-3xl font-bold mb-4 section-title">La Algueña, Alicante</h3>
+                  <p className="text-xl text-accent mb-4">Sede de la convocatoria Verano 2026</p>
                   <p className="text-lg text-muted">
-                    Trabajaremos en El Muca, un espacio único para la exploración artística
+                    Un pueblo con encanto especial donde confluyen la tradición y la creatividad
                   </p>
                 </div>
-                
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="grid md:grid-cols-2 gap-6">
                   <Image 
                     src="/1320190343-cor-016-casa-musica-music-house-alguena-39.jpg" 
-                    alt="El Muca - Casa de Música - Espacio interior"
+                    alt="La Algueña - Espacio de trabajo"
                     width={400}
                     height={192}
                     className="w-full h-48 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
                   />
                   <Image 
                     src="/cor_016_hq_casa_musica_music_house_alguena_11.jpg" 
-                    alt="El Muca - Casa de Música - Ambiente acogedor"
+                    alt="La Algueña - Ambiente del taller"
                     width={400}
                     height={192}
                     className="w-full h-48 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div className="flex items-center gap-3 p-4 bg-white/10 rounded-lg">
-                    <span className="text-sm">Espacio creativo optimizado</span>
-                  </div>
-                  <div className="flex items-center gap-3 p-4 bg-white/10 rounded-lg">
-                    <span className="text-sm">Acústica profesional</span>
-                  </div>
-                  <div className="flex items-center gap-3 p-4 bg-white/10 rounded-lg">
-                    <span className="text-sm">Ambiente colaborativo</span>
-                  </div>
-                </div>
               </div>
             </div>
 
             {/* La Algueña */}
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/15 p-8">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold mb-4 section-title">La Algueña, Alicante</h3>
-                <p className="text-lg text-muted mb-6">
-                  Un pueblo con encanto especial donde confluyen la tradición y la creatividad
-                </p>
-                <a 
-                  href="https://www.alguenya.es/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors underline text-lg"
-                >
-                  Descubre más sobre La Algueña
-                </a>
-              </div>
+            <div className="relative overflow-hidden rounded-3xl">
+              <Image
+                src="/piscina.jpg"
+                alt="Piscina de verano de La Algueña"
+                width={800}
+                height={450}
+                className="w-full h-72 object-cover rounded-3xl"
+              />
             </div>
           </div>
         </div>
@@ -581,6 +610,21 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-5xl font-bold mb-6 section-title">Inscripción</h2>
+            <p className="text-xl text-muted mb-6 max-w-2xl mx-auto">
+              Quedan pocas semanas. Si sientes que esta propuesta te llama, este es el momento de dar el paso.
+            </p>
+            <div className="inline-flex flex-wrap items-center justify-center gap-3 rounded-2xl border border-accent/30 bg-white/40 px-4 py-3 backdrop-blur-sm">
+              <span className="rounded-full bg-green-600 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">Convocatoria 2026 abierta</span>
+              <span className="text-sm text-muted">Plazas limitadas · Confirmación por orden de reserva</span>
+            </div>
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
+              <a href="#conecta" className="inline-flex items-center rounded-lg border border-accent/30 px-4 py-2 text-sm font-semibold text-accent hover:bg-accent/10 transition-colors">
+                Resolver dudas antes de inscribirte
+              </a>
+              <Link href="/alojamiento" className="inline-flex items-center rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent/90 transition-colors">
+                Ver alojamiento y comida
+              </Link>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -592,18 +636,31 @@ export default function Home() {
                   <span className="text-2xl text-white">📅</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-6 text-center section-title">Detalles del Taller</h3>
+                <div className="mb-6 overflow-hidden rounded-xl border border-white/20">
+                  <Image
+                    src="/1320190343-cor-016-casa-musica-music-house-alguena-39.jpg"
+                    alt="La Algueña, sede de la convocatoria 2026"
+                    width={800}
+                    height={360}
+                    className="w-full h-40 object-cover"
+                  />
+                </div>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                    <span className="font-semibold">Sede:</span>
+                    <span className="text-accent">La Algueña, Alicante</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-white/10 rounded-lg">
                     <span className="font-semibold">Fechas:</span>
-                    <span className="text-accent">1-5 Sept 2025</span>
+                    <span className="text-accent">20 Jul - 24 Jul 2026</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white/10 rounded-lg">
                     <span className="font-semibold">Recepción e inicio:</span>
-                    <span className="text-accent">1 Sept 17:00h</span>
+                    <span className="text-accent">20 Jul 17:00h</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white/10 rounded-lg">
                     <span className="font-semibold">Recapitulación y cierre:</span>
-                    <span className="text-accent">5 Sept 13:00h</span>
+                    <span className="text-accent">24 Jul 13:30h</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-white/10 rounded-lg">
                     <span className="font-semibold">Precio total:</span>
@@ -742,6 +799,73 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CTA puente hacia testimonios */}
+      <div className="py-12 bg-gradient-to-r from-accent/10 via-accent/5 to-accent/10">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-2xl font-serif italic text-foreground mb-4">
+            &ldquo;Una experiencia que no se olvida. Que sigue creciendo dentro de ti.&rdquo;
+          </p>
+          <p className="text-muted mb-6">Esto es lo que dicen quienes ya vivieron Qualia en La Algueña.</p>
+          <a
+            href="#inscripcion"
+            className="inline-block px-8 py-3 rounded-full font-bold text-background transition-all hover:opacity-90"
+            style={{backgroundColor: '#8b4513'}}
+          >
+            Quiero vivir esta experiencia →
+          </a>
+        </div>
+      </div>
+
+      {/* Testimonios */}
+      <section className="py-16 bg-secondary/60">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-4 text-center font-serif">Voces de Qualia</h2>
+          <p className="text-center text-muted text-lg mb-12">Testimonios de participantes — La Algueña, septiembre 2025</p>
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+
+            <div className="p-8 bg-white/60 border border-border rounded-3xl">
+              <p className="text-lg leading-relaxed mb-6 italic">
+                &ldquo;Esos días siguen con la misma frescura en mí cada día. Siento que, sin darme cuenta, desarrollé un sentimiento más profundo de mí misma, es como que me siento más cerca de mi alma, mi esencia, mi algo en mí. Y me siento muy feliz cada día. Un sentido de bienestar que es difícil de explicar. Soy más consciente, sobre todo de lo que no se ve, mi voz, un gesto, una sonrisa interior, la entonación, el comienzo de un movimiento, los silencios entre palabras, lo sutil&hellip;&rdquo;
+              </p>
+              <p className="font-semibold text-accent">Toñi Aragosa</p>
+            </div>
+
+            <div className="p-8 bg-white/60 border border-border rounded-3xl">
+              <p className="text-lg leading-relaxed mb-6 italic">
+                &ldquo;La experiencia de Qualia en La Algueña el verano del 25 fue como un reconstituyente, me alegró por dentro y fue como revisitar mis años de formación en la ESAD de Valencia pero en otra dimensión. Se reavivó el gusto por el trabajo bien hecho y dio nuevos bríos a la labor en torno al método sistémico que vengo desarrollando desde hace ya muchos años.&rdquo;
+              </p>
+              <p className="font-semibold text-accent">Sebastián Antón</p>
+              <p className="text-sm text-muted">Asesor sistémico</p>
+            </div>
+
+            <div className="p-8 bg-white/60 border border-border rounded-3xl">
+              <p className="text-lg leading-relaxed mb-6 italic">
+                &ldquo;Qualia ha sido para mí una experiencia de expansión y exploración interior que me ha llevado a confiar más en el misterio que me habita y me rodea. Se ha instalado en mi interior como una semilla que germina y crece cada día dándome el impulso necesario para instalarme en el mundo desde lo que soy. Me ha abierto la voz, el movimiento y la expresión desde la fluidez, la expansión, la presencia, la observación y el silencio.&rdquo;
+              </p>
+              <p className="font-semibold text-accent">Ariane Gómez</p>
+            </div>
+
+            <div className="p-8 bg-white/60 border border-border rounded-3xl">
+              <p className="text-lg leading-relaxed mb-6 italic">
+                &ldquo;A nivel profesional me ha permitido incorporar el concepto de &lsquo;caminar la palabra&rsquo; a mis entrenamientos de hablar en público. Eso supone disfrutar más de cada paso, ser conscientes de qué estamos haciendo en cada momento&hellip; Yo he aplicado la técnica y el concepto de &lsquo;caminar la palabra&rsquo; para tomar conciencia y disfrutar más cada paso del camino. Lo he aplicado conmigo misma y con todas las personas que se forman conmigo.&rdquo;
+              </p>
+              <p className="font-semibold text-accent">Marisa Pico</p>
+              <p className="text-sm text-muted">Directora de la Escuela Oratoria Training Camp</p>
+            </div>
+
+            <div className="p-8 bg-white/60 border border-border rounded-3xl md:col-span-2">
+              <p className="text-lg leading-relaxed mb-6 italic">
+                &ldquo;Además de la impecable organización del evento&hellip; cada artista-pedagogo transformó este lugar en un espacio de libertad compartida, nos propuso un tránsito de conocimiento creativo, en el cual íbamos escalando el espíritu de la palabra, y a partir de su altura, trabajar el poema que cada compañera, compañero traía en el alma&hellip; La voz saliendo en un fino y elegante río, que brilla mediante las sutiles cuerdas vocales, ahora bronco volcán, ahora vuelo de mariposa, ahora filigrana. La voz, ese misterioso instrumento.&rdquo;
+              </p>
+              <p className="font-bold text-accent text-lg italic mt-4">&ldquo;Entré, miedosa semilla / Salí, sonriente flor&rdquo;</p>
+              <p className="font-semibold text-accent mt-2">Carlos Elizalde</p>
+              <p className="text-sm text-muted">Actor</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="conecta" className="py-16 bg-secondary/85">
         <div className="container mx-auto px-4">
@@ -827,13 +951,7 @@ export default function Home() {
                 <p className="text-sm text-muted">Colaboradora</p>
               </div>
               
-              {/* Pedro Moreno */}
-              <div className="text-center p-6 bg-secondary/90 rounded-lg">
-                <h3 className="text-lg font-bold mb-2 font-serif">Pedro Moreno</h3>
-                <p className="text-sm text-muted">Propuesta artística</p>
-              </div>
-              
-              {/* Diseño web */}
+              {/* Diseño web */}}
               <div className="text-center p-6 bg-secondary/90 rounded-lg">
                 <h3 className="text-lg font-bold mb-2 font-serif">Diseño Web</h3>
                 <p className="text-sm text-muted">Ibai San Millan Gomez [EtherCore] <a href="https://ether-core.com" target="_blank" rel="noopener noreferrer" className="text-accent text-sm hover:underline">ether-core.com</a></p>
@@ -845,6 +963,40 @@ export default function Home() {
                 Gracias a todas las personas y organizaciones que hacen posible este proyecto
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Donación y Colaboración */}
+      <section className="py-16 bg-secondary/60">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-6 font-serif" style={{color: '#8b4513'}}>Colabora con Qualia</h2>
+            <p className="text-lg text-muted mb-8 leading-relaxed">
+              El Colectivo Qualia es un proyecto independiente sostenido por la pasión y el compromiso de sus miembros.
+              Si quieres apoyar nuestro trabajo e investigación en las Artes Vivas, puedes hacerlo a través de una donación o colaboración.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-6 mb-8">
+              <div className="p-6 bg-white/60 border border-border rounded-2xl">
+                <h3 className="text-xl font-bold mb-2 font-serif" style={{color: '#8b4513'}}>Donación</h3>
+                <p className="text-muted text-sm">
+                  Tu aportación, grande o pequeña, contribuye directamente a hacer posibles nuestras propuestas de investigación y formación.
+                </p>
+              </div>
+              <div className="p-6 bg-white/60 border border-border rounded-2xl">
+                <h3 className="text-xl font-bold mb-2 font-serif" style={{color: '#8b4513'}}>Colaboración</h3>
+                <p className="text-muted text-sm">
+                  Si eres una institución, espacio cultural o artista y deseas colaborar con Qualia, ponte en contacto con nosotros.
+                </p>
+              </div>
+            </div>
+            <a
+              href="/#conecta"
+              className="inline-block px-8 py-3 rounded-full font-semibold text-background transition-all hover:opacity-90"
+              style={{backgroundColor: '#8b4513'}}
+            >
+              Contactar con Qualia
+            </a>
           </div>
         </div>
       </section>
@@ -867,7 +1019,7 @@ export default function Home() {
               El arte de la palabra creativa, Escuela de Voz.
             </p>
             <p className="text-background/60 mt-4">
-              © 2025 Qualia. Todos los derechos reservados.
+              © {currentYear} Qualia. Todos los derechos reservados.
             </p>
           </div>
         </div>

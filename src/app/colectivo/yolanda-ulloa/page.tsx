@@ -24,7 +24,9 @@ export default function YolandaUlloa() {
               />
             </div>
             <h1 className="text-4xl font-bold mb-4 section-title">Yolanda Ulloa</h1>
-            <p className="text-xl text-accent mb-2">Actriz, terapeuta biográfica y profesional del Arte de la Palabra</p>
+            <p className="text-lg font-semibold text-accent mb-1">Fundadora de Espacio Qualia</p>
+            <p className="text-xl text-accent mb-1">Actriz, terapeuta biográfica y profesional del Arte de la Palabra</p>
+            <p className="text-sm font-semibold text-accent mb-2">Cofundadora</p>
             <a 
               href="https://www.yolandaulloa.es" 
               target="_blank" 
@@ -33,6 +35,22 @@ export default function YolandaUlloa() {
             >
               www.yolandaulloa.es →
             </a>
+          </div>
+
+          {/* Biografía Íntima */}
+          <div className="mt-8 mb-8 p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+            <h2 className="text-2xl font-bold mb-6 section-title">Biografía Íntima</h2>
+            <div className="space-y-4 text-lg leading-relaxed">
+              <p>
+                Hay en mí una curiosidad profunda por lo humano. Por todo cuanto nos significa y constituye. De ahí mi interés en el arte y en la belleza del arte. La belleza que nace en la escucha y en la entrega al silencio: el arte de la revelación.
+              </p>
+              <p>
+                El sonido abre el corazón del mundo. Desde luego abrió el mío. Y ya desde muy niña supo encontrar sus caminos en mi vida y un hogar en mi voz. Desde entonces hasta hoy convivo audaz y felizmente con el sonar del mundo, con sus infinitas articulaciones y modulaciones, con su verbo, su voluntad y sus muchos credos. Con la voz que nos crea y con la voz que acertamos a ser.
+              </p>
+              <p>
+                Entre mis anhelos está el acercar esta experiencia a todos cuantos sientan esa misma necesidad…: entablar una relación propia con su voz, hacer visible lo invisible… audible lo inaudible… habitar lo que nos habita…. ser lo que somos. Y sobre todo, tal y como indica el nombre de nuestro ESPACIO, dar voz y lugar en el espacio y en el tiempo a nuestros QUALIA.
+              </p>
+            </div>
           </div>
 
           {/* Formación */}

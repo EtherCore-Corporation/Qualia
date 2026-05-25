@@ -114,6 +114,7 @@ export default function Profesores() {
               <p className="text-sm text-muted leading-relaxed">
                 Investigador de las dimensiones rítmicas y temporales en la expresión artística.
               </p>
+              <p className="text-sm font-semibold text-accent mt-2">Cofundador</p>
             </div>
           </Link>
 
@@ -136,6 +137,7 @@ export default function Profesores() {
               <p className="text-sm text-muted leading-relaxed">
                 Actriz y docente que transita entre el escenario, el aula y la investigación.
               </p>
+              <p className="text-sm font-semibold text-accent mt-2">Cofundadora</p>
             </div>
           </Link>
 
@@ -158,6 +160,7 @@ export default function Profesores() {
               <p className="text-sm text-muted leading-relaxed">
                 Docente de la Escuela de Artes TAI, especialista en voz y cuerpo.
               </p>
+              <p className="text-sm font-semibold text-accent mt-2">Cofundadora</p>
             </div>
           </Link>
 
@@ -177,9 +180,11 @@ export default function Profesores() {
                 />
               </div>
               <h3 className="text-xl font-bold mb-4 section-title">Yolanda Ulloa</h3>
-              <p className="text-sm text-muted leading-relaxed">
-                Actriz, terapeuta biográfica y profesional del Arte de la Palabra.
+              <p className="text-sm leading-relaxed">
+                <span className="font-semibold text-accent">Fundadora de Espacio Qualia.</span>{' '}
+                <span className="text-muted">Actriz, terapeuta biográfica y profesional del Arte de la Palabra.</span>
               </p>
+              <p className="text-sm font-semibold text-accent mt-2">Cofundadora</p>
             </div>
           </Link>
 
@@ -200,8 +205,9 @@ export default function Profesores() {
               </div>
               <h3 className="text-xl font-bold mb-4 section-title">El Primo Saint Tropez</h3>
               <p className="text-sm text-muted leading-relaxed">
-                Actor e investigador en Artes Vivas, miembro de diversos colectivos artísticos.
+                Heterónimo con el que el actor Jesús Barranco investiga y crea en el ámbito de las Artes Vivas.
               </p>
+              <p className="text-sm font-semibold text-accent mt-2">Cofundador</p>
             </div>
           </Link>
         </div>

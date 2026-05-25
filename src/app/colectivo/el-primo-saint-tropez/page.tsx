@@ -109,7 +109,8 @@ export default function ElPrimoSaintTropez() {
               />
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 section-title">El Primo Saint Tropez</h1>
-            <p className="text-lg md:text-xl text-accent mb-2">Actor e investigador en Artes Vivas</p>
+            <p className="text-lg md:text-xl text-accent mb-1">Actor e investigador en Artes Vivas</p>
+            <p className="text-sm font-semibold text-accent mb-2">Cofundador</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a 
                 href="#" 
@@ -130,8 +131,24 @@ export default function ElPrimoSaintTropez() {
           <div className="mt-8 p-6 md:p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
             <h2 className="text-xl md:text-2xl font-bold mb-6 section-title">Heterónimo</h2>
             <p className="text-base md:text-lg">
-              Heterónimo con el que El Primo Saint Tropez investiga y crea en el ámbito de las Artes Vivas en diálogo con largos retiros en monasterios Carmelitas.
+              Heterónimo con el que el actor Jesús Barranco investiga y crea en el ámbito de las Artes Vivas en diálogo con largos retiros en monasterios Carmelitas.
             </p>
+          </div>
+
+          {/* Biografía Íntima */}
+          <div className="mt-8 p-6 md:p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+            <h2 className="text-xl md:text-2xl font-bold mb-6 section-title">Biografía Íntima</h2>
+            <div className="space-y-4 text-base md:text-lg leading-relaxed">
+              <p>
+                Estoy convencido de que la palabra es liturgia en cada acto y desde que nací como heterónimo de un actor en una roca de la costa azul francesa he sido siempre resonador: de los barcos del puerto, del pecho de la madre de Jesús Barranco, de los hombros lascivos de todos los marinos con cara cúbica y del hueco de la campana del ángelus.
+              </p>
+              <p>
+                Estoy convencido de que mi diafragma ha soportado cada dolor y cada gozo y sobre esa memoria he podido cantar y gritar.
+              </p>
+              <p>
+                Ahora en la mediana edad de la vida entiendo con temeridad que se puede entrenar el cuerpo como instrumento para lo inasible, ser un mercenario para la voz y la palabra en busca de tantas poéticas escénicas como diversidades para el conocimiento.
+              </p>
+            </div>
           </div>
 
           {/* Trayectoria */}

@@ -24,7 +24,41 @@ export default function JesusAladren() {
               />
             </div>
             <h1 className="text-4xl font-bold mb-4 section-title">Jesús Aladrén</h1>
-            <p className="text-xl text-accent mb-2">Especialista en Ortofonía y Dicción</p>
+            <p className="text-xl text-accent mb-1">Especialista en Ortofonía y Dicción</p>
+            <p className="text-sm font-semibold text-accent mb-2">Cofundador</p>
+          </div>
+
+          {/* Biografía Íntima */}
+          <div className="mb-8 p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+            <h2 className="text-2xl font-bold mb-6 section-title">Biografía Íntima</h2>
+            <h3 className="text-xl font-semibold text-accent mb-6">&ldquo;El ritmo de la voz, la voz en movimiento&rdquo;</h3>
+            <div className="space-y-6 text-lg leading-relaxed">
+              <div>
+                <h4 className="font-semibold text-accent mb-2">El cuerpo y sus equilibrios</h4>
+                <ul className="list-disc ml-6 space-y-1 text-base">
+                  <li>Centro energético</li>
+                  <li>El eje corporal</li>
+                  <li>Lateralidades</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-accent mb-2">Elementos de la voz interaccionados</h4>
+                <ul className="list-disc ml-6 space-y-1 text-base">
+                  <li>Aparato respiratorio</li>
+                  <li>Aparato fonador</li>
+                  <li>Aparato resonador</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-accent mb-2">Propiedades del sonido</h4>
+                <ul className="list-disc ml-6 space-y-1 text-base">
+                  <li>Tono</li>
+                  <li>Timbre</li>
+                  <li>Cantidad</li>
+                  <li>Intensidad</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           {/* Formación */}

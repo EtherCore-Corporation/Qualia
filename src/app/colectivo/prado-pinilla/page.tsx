@@ -24,7 +24,8 @@ export default function PradoPinilla() {
               />
             </div>
             <h1 className="text-4xl font-bold mb-4 section-title">Prado Pinilla</h1>
-            <p className="text-xl text-accent mb-2">Docente de la Escuela de Artes TAI</p>
+            <p className="text-xl text-accent mb-1">Docente de la Escuela de Artes TAI</p>
+            <p className="text-sm font-semibold text-accent mb-2">Cofundadora</p>
             <a 
               href="https://taiarts.com/claustro/prado-pinilla/" 
               target="_blank" 
