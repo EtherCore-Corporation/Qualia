@@ -52,6 +52,7 @@ export default function Home() {
               <a href="#que-es-qualia" className="hover:text-accent transition-colors">Qué es Qualia</a>
               <a href="/colectivo" className="hover:text-accent transition-colors">Colectivo Qualia</a>
               <a href="#propuesta-investigacion" className="hover:text-accent transition-colors">Propuesta de investigación</a>
+              <a href="/propuestas-investigacion-anteriores" className="hover:text-accent transition-colors">Propuestas anteriores</a>
               <a href="#inscripcion" className="hover:text-accent transition-colors">Inscripción</a>
               <a href="#conecta" className="hover:text-accent transition-colors">Conecta con Qualia</a>
             </div>
@@ -95,6 +96,13 @@ export default function Home() {
                 >
                   Propuesta de investigación
                 </a>
+                <Link
+                  href="/propuestas-investigacion-anteriores"
+                  className="block py-2 hover:text-accent transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Propuestas anteriores
+                </Link>
                 <a 
                   href="#inscripcion" 
                   className="block py-2 hover:text-accent transition-colors"
@@ -168,7 +176,6 @@ export default function Home() {
 
             {/* Convocatoria badge */}
             <div className="mb-6 inline-flex flex-wrap items-center justify-center gap-2 rounded-2xl border border-accent/40 bg-white/30 backdrop-blur-sm px-5 py-3">
-              <span className="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide text-white" style={{backgroundColor: '#8b4513'}}>Convocatoria abierta</span>
               <span className="font-semibold text-foreground text-sm md:text-base">Los Gestos del Alma · 20–24 Julio 2026</span>
               <span className="text-sm text-muted">La Algueña, Alicante</span>
             </div>
@@ -269,7 +276,7 @@ export default function Home() {
                   para las Artes Vivas</strong>.
                 </p>
                 <p className="text-lg leading-relaxed animate-slide-in">
-                  Reúne a <strong>cinco individualidades</strong>, que se abren a la investigación de la escucha entre 
+                  Reúne <span style={{color: '#000000'}}>en sus orígenes</span> a cinco individualidades, que se abren a la investigación de la escucha entre 
                   el sonido y el silencio, proponiendo cinco búsquedas entrelazadas con el propósito de dibujar
                   <strong> nuevas cartografías del territorio de la voz</strong> y del uso de la palabra…
                 </p>
@@ -429,47 +436,92 @@ export default function Home() {
             <span className="sm:hidden">Propuesta de Investigación Verano 2026</span>
           </h2>
 
-          <div className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-3">
-            <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-              <h3 className="text-2xl font-bold mb-4 section-title">Los gestos del Alma</h3>
-              <p className="text-sm text-accent mt-1 mb-4 font-semibold">de Yolanda Ulloa</p>
-              <p className="text-sm leading-relaxed">
-                Indagar en la conformación de nuestros movimientos y disposiciones internas en relación con uno mismo, con el otro y con lo otro. Poder observar cómo se yergue en el alma una respuesta al mundo, cómo entra en conversación con cuanto le rodea por fuera, con cuanto emerge en su interior. Reconocer y contemplar la naturaleza de la gesticulación del alma y de su voz en nosotros.
+          <div className="max-w-5xl mx-auto space-y-8">
+            <div className="p-8 md:p-10 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+              <p className="text-sm uppercase tracking-wide text-accent font-semibold mb-3">Verano 2026</p>
+              <h3 className="text-2xl md:text-3xl font-bold section-title mb-4">Los Gestos del Alma</h3>
+              <p className="text-lg md:text-xl italic leading-relaxed mb-5">
+                &ldquo;Del gesto a la palabra<br />
+                De la palabra al gesto&rdquo;
+              </p>
+              <p className="text-base md:text-lg leading-relaxed mb-4">
+                El gesto encarna todo cuanto cobra vida en la invisibilidad y nos informa sobre la verdad que significa y representa.
+              </p>
+              <p className="text-base md:text-lg leading-relaxed mb-4">
+                Desde nuestra imaginación y sensorialidad podemos percibir y reconocer los perfiles que dan lugar a cada gesto del alma. Exploraremos ese campo de expresión para sembrar de posibilidades nuestra capacidad creadora.
+              </p>
+              <p className="text-base md:text-lg leading-relaxed mb-4">
+                Esta es la 2ª propuesta abierta del Colectivo Qualia.
+              </p>
+              <p className="text-base md:text-lg leading-relaxed">
+                Dirigida principalmente a creadores y creadoras que deseen preguntarse SU VOZ o LA VOZ en el campo de las Artes Vivas y a todo aquel interesado en esta propuesta.
               </p>
             </div>
 
-            <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-              <h3 className="text-2xl font-bold mb-4 section-title">Los gestos del Cuerpo</h3>
-              <p className="text-sm text-accent mt-1 mb-4 font-semibold">de Prado Pinilla</p>
-              <p className="text-sm leading-relaxed">
-                Al modificar las estructuras de soporte-apoyo del cuerpo se transmite nueva información al resto de estructuras psicofísicas, dinamizando la aparición y el descubrimiento de gestos internos diversos capaces de convocar otras voces…
-              </p>
-            </div>
-
-            <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-              <h3 className="text-2xl font-bold mb-4 section-title">El ritmo de la voz, la voz en movimiento</h3>
-              <p className="text-sm text-accent mt-1 mb-4 font-semibold">de Jesús Aladrén</p>
-              <div className="space-y-4 text-sm leading-relaxed">
-                <div>
-                  <p className="font-semibold text-accent mb-1">El cuerpo y sus equilibrios</p>
-                  <p>Centro energético</p>
-                  <p>El eje corporal</p>
-                  <p>Lateralidades</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-accent mb-1">Elementos de la voz interaccionados</p>
-                  <p>Aparato respiratorio</p>
-                  <p>Aparato fonador</p>
-                  <p>Aparato resonador</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-accent mb-1">Propiedades del sonido</p>
-                  <p>Tono</p>
-                  <p>Timbre</p>
-                  <p>Cantidad</p>
-                  <p>Intensidad</p>
+            <div className="grid gap-8 lg:grid-cols-2">
+              <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+                <h4 className="text-xl font-bold mb-4 section-title">Fechas y aforo</h4>
+                <div className="space-y-2 text-base">
+                  <p><strong>Fechas:</strong> 20 Julio a 24 Julio</p>
+                  <p><strong>Mínimo:</strong> 9 personas</p>
+                  <p><strong>Máximo:</strong> 21 personas</p>
                 </div>
               </div>
+
+              <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+                <h4 className="text-xl font-bold mb-4 section-title">Programa</h4>
+                <div className="space-y-4 text-sm leading-relaxed">
+                  <div>
+                    <p className="font-semibold text-accent">Lunes tarde (de 17 a 20:00)</p>
+                    <p>Apertura de Espacio Qualia</p>
+                    <p>Sesión de presentación y bienvenida</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-accent">Martes, miércoles y jueves</p>
+                    <p>9:00 - 9:30h Caminamos</p>
+                    <p>9:30 - 12:00 Gestos del cuerpo - Gestos del alma</p>
+                    <p>12:00 - 12:30 Pausa</p>
+                    <p>12:30 - 13:30 Trabajo con textos</p>
+                    <p>13:30 - 17:00 Comida / Tiempo libre</p>
+                    <p>17:00 - 18:30 Ritmo - Movimiento - Lateralidades - Direcciones</p>
+                    <p>18:30 - 19:30 Trabajo individual</p>
+                    <p>19:30 - 20:00 Cierre</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-accent">Viernes mañana (de 9:30 a 13:30)</p>
+                    <p>Sesión de Feldenkrais</p>
+                    <p>Preparación y muestra compartida del trabajo individual</p>
+                    <p>Cierre de Espacio Qualia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid gap-8 lg:grid-cols-2">
+              <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+                <h3 className="text-2xl font-bold mb-2 section-title">Los gestos del Alma</h3>
+                <p className="text-sm text-accent mt-1 mb-4 font-semibold">de Yolanda Ulloa</p>
+                <p className="text-sm leading-relaxed">
+                  Indagar en la conformación de nuestros movimientos y disposiciones internas en relación con uno mismo, con el otro y con lo otro. Poder observar cómo se yergue en el alma una respuesta al mundo, cómo entra en conversación con cuanto le rodea por fuera, con cuanto emerge en su interior. Reconocer y contemplar la naturaleza de la gesticulación del alma y de su voz en nosotros.
+                </p>
+              </div>
+
+              <div className="p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
+                <h3 className="text-2xl font-bold mb-2 section-title">Los gestos del Cuerpo</h3>
+                <p className="text-sm text-accent mt-1 mb-4 font-semibold">de Prado Pinilla</p>
+                <p className="text-sm leading-relaxed">
+                  Al modificar las estructuras de soporte-apoyo del cuerpo se transmite nueva información al resto de estructuras psicofísicas, dinamizando la aparición y el descubrimiento de gestos internos diversos capaces de convocar otras voces…
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <Link
+                href="/propuestas-investigacion-anteriores"
+                className="inline-flex items-center rounded-lg border border-accent/40 px-5 py-3 text-sm font-semibold text-accent hover:bg-accent/10 transition-colors"
+              >
+                Ver propuestas de investigación anteriores
+              </Link>
             </div>
           </div>
         </div>
@@ -478,16 +530,30 @@ export default function Home() {
       {/* Dónde Section */}
       <section className="py-16 bg-secondary/85">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center section-title">Dónde</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center section-title">¿Dónde?</h2>
           
           <div className="max-w-6xl mx-auto">
+
+            {/* MUCA */}
+            <div className="mb-10 relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 p-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent"></div>
+              <div className="relative z-10">
+                <div className="text-center">
+                  <h3 className="text-3xl font-bold mb-4 section-title">MUCA</h3>
+                  <p className="text-lg text-muted">
+                    Punto de encuentro del trabajo en el territorio.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/* La Algueña */}
             <div className="mb-16 relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 p-8">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent"></div>
               <div className="relative z-10">
                 <div className="text-center mb-8">
                   <h3 className="text-3xl font-bold mb-4 section-title">La Algueña, Alicante</h3>
-                  <p className="text-xl text-accent mb-4">Sede de la convocatoria Verano 2026</p>
+                  <p className="text-xl text-accent mb-4">Sede 2026</p>
                   <p className="text-lg text-muted">
                     Un pueblo con encanto especial donde confluyen la tradición y la creatividad
                   </p>

@@ -127,14 +127,6 @@ export default function ElPrimoSaintTropez() {
             </div>
           </div>
 
-          {/* Heterónimo */}
-          <div className="mt-8 p-6 md:p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
-            <h2 className="text-xl md:text-2xl font-bold mb-6 section-title">Heterónimo</h2>
-            <p className="text-base md:text-lg">
-              Heterónimo con el que el actor Jesús Barranco investiga y crea en el ámbito de las Artes Vivas en diálogo con largos retiros en monasterios Carmelitas.
-            </p>
-          </div>
-
           {/* Biografía Íntima */}
           <div className="mt-8 p-6 md:p-8 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md border border-white/20 rounded-3xl">
             <h2 className="text-xl md:text-2xl font-bold mb-6 section-title">Biografía Íntima</h2>
